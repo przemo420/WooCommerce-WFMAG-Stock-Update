@@ -1,0 +1,23 @@
+{
+  "name": "klient",
+  "version": "0.0.0",
+  "description": "klient",
+  "author": {
+    "name": "adm"
+  },
+  "dependencies": {
+    "async": "^2.6.1",
+    "electron": "^2.0.8",
+    "electron-packager": "^12.1.1",
+    "events": "^3.0.0",
+    "http": "0.0.0",
+    "mssql": "^4.1.0",
+    "regedit": "^3.0.0",
+    "request": "^2.88.0"
+  },
+  "main": "klient.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . --all"
+  }
+}
