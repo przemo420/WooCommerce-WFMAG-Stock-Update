@@ -23,7 +23,7 @@ class Window {
     }
 
     info(message, clean = 0) {
-        this.send('show-logs', { 'clean': clean, 'log': '[' + new Date().toLocaleTimeString() + '] ' + message });
+        this.send('show-logs', { 'clean': clean, 'log': '[' + new Date().toLocaleString() + '] ' + message });
     }
 }
 

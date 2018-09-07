@@ -49,6 +49,10 @@
 
             ipcRenderer.send('load-done', true);
 
+            let myNotification = new Notification('Title', {
+                body: 'Lorem Ipsum Dolor Sit Amet'
+            })
+
             ipcRenderer.on('load-data', function (event, data) {
                 $('#content').empty();
 

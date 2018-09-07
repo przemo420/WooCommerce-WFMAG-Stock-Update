@@ -1,7 +1,8 @@
 ﻿const async = require('async'),
+    fs = require('fs'),
     mssql = require('mssql');
 
-var config = {};
+var config = {}, event = null;
 
 class SQLRequest {
     makeConnection(cb) {
@@ -32,12 +33,19 @@ class SQLRequest {
     makeRequest(products, mag, cb) {
         const msreq = new mssql.Request();
         msreq.stream = true;
-        msreq.query('SELECT NrKatalogowy, IloscDostepna FROM WIDOK_ARTYKUL WHERE idMagazynu = '+mag+' ORDER BY nrKatalogowy'); // or request.execute(procedure)
+        msreq.query('SELECT Nazwa1, NrKatalogowy, IloscDostepna FROM WIDOK_ARTYKUL WHERE idMagazynu = '+mag+' ORDER BY nrKatalogowy'); // or request.execute(procedure)
 
-        var artykuly = {};
+        var artykuly = {}, w_artykuly = {};
 
         msreq.on('row', function (row) {
-            if (typeof products[row.NrKatalogowy] === 'undefined') return;
+            w_artykuly[row.NrKatalogowy] = true;
+            if (typeof products[row.NrKatalogowy] === 'undefined') {
+                if (row.IloscDostepna) {
+                    event.emit('show-info', 'Brak artykułu: ' + row.Nazwa1 + ' [ ' + row.NrKatalogowy + ' ] Ilość:' + row.IloscDostepna);
+                }
+
+                return;
+            }
 
             artykuly[row.NrKatalogowy] = [products[row.NrKatalogowy], row.IloscDostepna];
         });
@@ -52,7 +60,8 @@ class SQLRequest {
     }
 }
 
-module.exports = function (cfg) {
+module.exports = function (cfg, e) {
     config = cfg;
+    event = e;
     return new SQLRequest();
 }
