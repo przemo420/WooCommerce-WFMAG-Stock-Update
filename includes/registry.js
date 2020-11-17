@@ -1,93 +1,60 @@
 ﻿const async = require('async'),
-    regedit = require('regedit');
+    regedit = require('regedit'),
+    fs = require('fs');  
 
 var config = {}, event = null;
 
 class Registry {
-    constructor() {
-        this.sites = config.defaultSite;
-    }
+    constructor() {}
 
     getSites(cb) {
-        return cb(this.sites);
+        return cb( config.sites );
     }
 
-    setSites(sites) {
-        this.sites = sites;
-    }
+    updateSites(cb) {
+        fs.open('config.js', 'w', (err, fd) => {
+            if (err) return cb(err);
 
-    checkRegistry(cb) {
-        regedit.list('HKCU\\AktualizatorStanowMagazynowych', function (err, result) {
-            return cb(err ? false : true, result);
-        });
-    }
-
-    createRegistryDefault(cb) {
-        regedit.createKey('HKCU\\AktualizatorStanowMagazynowych', function (err) {
-            if (err) {
-                event.emit('show-info', 'Nie można utworzyć rejestru HKCU\\AktualizatorStanowMagazynowych:'+err.toString());
-                return cb(true);
-            }
-
-            return cb(null);
-        });
-    }
-
-    insertRegistry(cb) {
-        regedit.putValue({
-            'HKCU\\AktualizatorStanowMagazynowych': {
-                'strony': {
-                    value: [defaultSite],
-                    type: 'REG_SZ'
-                }
-            }
-        }, function (err) {
-            if (err) {
-                event.emit('show-info', 'Nie można przypisać kluczy do utworzonego rejestru HKCU\\AktualizatorStanowMagazynowych:' + err.toString());
-                return cb(true);
-            }
-
-            return cb(null);
-        });
-    }
-
-    prepareRegistry(cb) {
-        var $this = this;
-
-        async.waterfall([
-            function (callback) {
-                $this.checkRegistry(function(exist, list) {
-                    if (exist) return callback(null, list['HKCU\\AktualizatorStanowMagazynowych']); // klucz istnieje, przechodzimy dalej
-
-                    $this.createRegistryDefault(function (err) {
-                        if (err) return callback(err);
-
-                        event.emit('show-info', 'Utworzono klucz rejestru.');
-                        return callback(null, list);
-                    });
-                });
-            },
-            function (list, callback) {
-                if (typeof list === 'object') return callback(null, list); // posiada wartości, przechodzimy dalej
-
-                $this.insertRegistry(function (err) {
-                    if (err) return callback(err);
-
-                    event.emit('show-info', 'Dodano wpis(y) rejestru.');
-                    return callback(null, "{ 'values': { 'strony': { 'value': "+defaultSite+" } } }");
-                });
-            },
-            function (list, callback) {
-                event.emit('show-info', 'Wczytano odpytywanie stron:'+list.values.strony.value);
-                $this.setSites(JSON.parse(list.values.strony.value));
-                return callback(null);
-            }
-        ], function (err, result) {
-            if (err) {
-                config.logs('prepareRegistry error:', err);
-            }
+            var text = 'module.exports =';
+            text += JSON.stringify(config, null, 2);
+            text += `;module.exports.logs = function () {Array.prototype.unshift.call(arguments, '[' + new Date().toLocaleString() + ']');return console.log.apply(this, arguments);}`;
             
-            return cb(null);  
+            fs.appendFile(fd, text, 'utf8', (err) => {
+                if (err) return cb(err);
+
+                fs.close(fd, (err) => {
+                    if (err) return cb(err);
+
+                    event.emit('load-done');
+                    cb(null);
+                });
+            });
+        });
+    }
+
+    addSite( id, prot, mag, cb ) {
+        config.sites[ id ] = { 'url': prot+id, 'lastUpdate': '-', 'idMagazynu': mag };
+
+        this.updateSites(function(err){
+            return cb( err );
+        });
+    }
+
+    removeSite( site, cb ) {
+        if( typeof config.sites[ site ] === 'undefined') return cb( 'Nie istnieje strona o tym identyfikatorze: '+site );
+
+        delete config.sites[ site ];
+        this.updateSites(function(err){
+            return cb( err );
+        });
+    }
+
+    setUpdateTime( site, cb ) {
+        if( typeof config.sites[ site ] === 'undefined') return;
+
+        config.sites[ site ].lastUpdate = (new Date()).toLocaleString();
+        this.updateSites(function(err){
+            return cb( err );
         });
     }
 } 
@@ -97,7 +64,5 @@ module.exports = function (cfg, e) {
     event = e;
 
     var registry = new Registry();
-    registry.prepareRegistry(function () { });
-
     return registry;
 }

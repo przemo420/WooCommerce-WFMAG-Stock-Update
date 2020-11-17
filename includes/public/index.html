@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>INDUAL INSIDER CONTROLLER</title>
+	<!--	<base href="includes/public/" target="_blank">-->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<center><h2>Trwają prace nad witryną..</h2><br>
+		<img src="img/0003.jpg" style="width: 300px"></center>
+
+		<div class="container mt-5">
+			<div class="row">
+				<div class="col-md-12">
+					<table class="table" style="border-collapse:collapse;">
+						<thead>
+						  <tr>
+							<th scope="col">#</th>
+							<th scope="col">Kontrahent</th>
+							<th scope="col">Kwota zamówienia</th>
+							<th scope="col">Status</th>
+							<th scope="col">Akcje</th>
+						  </tr>
+						</thead>
+						<tbody id="orderData">
+						  <tr class="d-none" id="sampleData">
+							<th scope="row">{nr}</th>
+							<td>{customer}</td>
+							<td>{price}</td>
+							<td>{status}</td>
+							<td><button class="btn btn-info">Szczegóły</button></td>
+						  </tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		$(document).ready(function(){
+			$.get( '/get-order-list', function( data ) {
+				if( data.success != 'true') return alert( 'Wystąpił błąd podczas pobierania zamówien! ');
+
+				data['orders'] = JSON.parse(data['orders']);
+				for( var order in data['orders'] ) {
+					var orderData = data['orders'][ order ];
+
+					console.log( orderData );
+					$('#orderData').append(
+						'<tr data-toggle="collapse" data-target="#details'+ orderData.id +'" class="accordion-toggle">'+
+						$('#sampleData').html().replace( '{nr}', orderData.id ).
+							replace( '{customer}', ( orderData.billing.company == '' ? ( orderData.billing.first_name + ' ' + orderData.billing.last_name ) : orderData.billing.company ) ).
+							replace( '{price}', orderData.total + ' ' + orderData.currency_symbol ).
+							replace( '{status}', orderData.status )+
+						'</tr> <tr><td colspan="5" class="p-0" ><div class="accordian-body collapse" id="details'+ orderData.id +'">Dane kontrahenta: '+ JSON.stringify(orderData) +'</div></td></tr>'
+					);
+				}
+
+				//console.log(data.orders);
+			});
+		});
+	</script>
+</html>

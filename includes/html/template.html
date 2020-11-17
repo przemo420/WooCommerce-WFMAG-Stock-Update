@@ -8,10 +8,20 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <title>Aktualizator stanów magazynowych</title>
+
+    <style>
+        nav .add { color: white }
+        #main .logs { position: absolute; bottom: 20px; width: 700px; height: 150px }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
         <a class="navbar-brand" href="#">Aktualizator stanów magazynowych</a>
+
+        <div class="collapse navbar-collapse" id="navbarText"></div>
+            <button type="button" class="btn btn-warning add" data-toggle="modal" data-target="#addSite">Dodaj stronę</button>
+        </div>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -27,12 +37,47 @@
                     <!-- sites -->
                 </div>
             </div>
-            <div class="col-md-12" style="position: absolute; bottom: 20px; width: 700px; height: 150px">
+            <div class="col-md-12 logs">
                 <div class="row">
                     <textarea style="width: 100%; height: 150px" id="logs"></textarea>
                 </div>
             </div>
        </div>
+    </div>
+
+    <div class="modal fade" id="addSite" tabindex="-1" role="dialog" aria-labelledby="addSiteLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addSiteLabel">Szablon dodawania nowej strony</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group row">
+                        <label for="siteID" class="col-sm-3 col-form-label">Adres strony</label>
+                        <div class="input-group col-sm-9">
+                            <div class="input-group-prepend">
+                                <select class="input-group-text" id="sitePROT"> <option>https://</option> <option>http://</option> </select>
+                            </div>
+                            
+                            <input type="text" class="form-control" id="siteID" placeholder="indual.pl">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="siteMAG" class="col-sm-3 col-form-label">ID magazynu</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="siteMAG" placeholder="Czujniki 150, Lighting 218">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+                  <button type="button" class="btn btn-primary add">Dodaj stronę</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script>if (typeof module === 'object') { window.module = module; module = undefined; }</script>
@@ -41,9 +86,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-    <script>if (window.module) module = window.module;</script>
-
     <script>
+        if (window.module) module = window.module;
         $(document).ready(function () {
             var ipcRenderer = require('electron').ipcRenderer;
 
@@ -59,14 +103,15 @@
                 $.each(data, function (i, item) {
                     $('#content').append(`<div class="col-md-12">
                         <div class="row">
-                            <div class="col-md-10">
+                            <div class="col-md-8">
                                 <div class="alert alert-dark" role="alert">
                                     Strona: <b>`+ i +`</b><br />
                                     Ostatnia aktualizacja: <b>`+ item.lastUpdate +`</b>
                                 </div>
                             </div>
-                            <div class="col-md-2">
-                                <a href="#" data-name="`+ i +`" class="btn btn-secondary update">Aktualizuj</a>
+                            <div class="col-md-4 text-right">
+                                <a href="#" data-name="`+ i +`" class="btn btn-info update">Aktualizuj</a>
+                                <a href="#" data-name="`+ i +`" class="btn btn-danger remove">Usuń</a>
                             </div>
                         </div>
                     </div>`);
@@ -77,11 +122,11 @@
                     <div class="row">
                         <div class="col-md-10">
                             <div class="alert alert-dark" role="alert">
-                                <b>Automatyczna aktualizacja</b>
+                                <b>Aktualizacja wszystkich stron</b>
                             </div>
                         </div>
-                        <div class="col-md-2">
-                            <a href="#" data-name="all" class="btn btn-secondary" id="updateAll">-</a>
+                        <div class="col-md-2 text-right">
+                            <a href="#" data-name="all" class="btn btn-primary update" id="updateAll">-</a>
                         </div>
                     </div>
                 </div>`);
@@ -100,6 +145,17 @@
             $('#content').on('click', 'a.update', function () {
                 ipcRenderer.send('do-update', $(this).attr('data-name'));
                 return false;
+            });
+
+            $('#content').on('click', 'a.remove', function () {
+                if( !confirm("Czy jesteś pewien?") ) return false;
+
+                ipcRenderer.send('do-remove', $(this).attr('data-name'));
+                return false;
+            });
+
+            $('#addSite').on('click', 'button.add', function () {
+                ipcRenderer.send('do-add', { 'id': $('#siteID').val(), 'protocol': $('#sitePROT').val(), 'mag': $('#siteMAG').val() });
             });
 
             function toTimeString(seconds) {

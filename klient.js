@@ -5,13 +5,26 @@ const registry = require('./includes/registry.js')(config, event);
 const mssql = require('./includes/mssql.js')(config, event);
 const window = require('./includes/window.js')(config, event);
 const request = require('./includes/request.js')(config, event);
+const ws = require('./includes/ws.js')(config, event, request);
 
-const HOUR = 3600; // seconds
+const updater = require('./includes/updater.js')(config, event, window, registry, request, mssql);
+const invoices = require('./includes/invoices.js')(config, event, window, registry, request, mssql);
+
+const HOUR = 3600 * 4; // seconds
 
 window.start();
 
 event.on('window-start', function () {
     var time = HOUR;
+
+    /*request.allegro( function( err, auth ) {
+        if( err ) {
+            return console.log( err );
+        }
+        
+        auth = JSON.parse( auth );
+        window.allegro( auth.verification_uri_complete );
+    });*/
 
     setInterval(function () {
         if (--time == 0) {
@@ -35,51 +48,24 @@ event.on('load-done', function () {
     });
 });
 
-event.on('do-update', function (data) {
-    window.info('Trwa odpytywanie zdalnego serwera..', true);
-
-    if (data == 'all') {
-        return window.info('Nie można odpytać wszystkich serwerów.');
-    }
-
+event.on('do-remove', function (data) {
     registry.getSites(function (arr) {
-        var option = arr[data];
-
-        request.list(option.url, function (err, body) {
-            if (err) {
-                return window.info('Wystapił błąd z wysłaniem danych do serwera:' + err);
+        registry.removeSite(data, function(err){
+            if( err ) {
+                return window.info( err );
             }
-
-            window.info('Nawiązywanie połączenia z bazą danych WF-MAG..');
-
-            mssql.closeConnection();
-            mssql.makeConnection(function (err) {
-                if (err) return window.info(err, true);
-
-                window.info('Przygotowanie tablicy z artykułami..');
-
-                mssql.prepareRequest(body, function (body) {
-                    window.info('Pobieranie artykułów z bazy danych WF-MAG..');
-
-                    mssql.makeRequest(body, option.idMagazynu, function (err, art) {
-                        if (err) return window.info(err, true);
-
-                        window.info('Wysyłanie danych do ' + data + '.');
-
-                        request.send(option.url, art, function (err, body) {
-                            if (err) return window.info(err, true);
-
-                            config.logs(body);
-
-                            if (typeof body.ok !== 'undefined' && body.ok == 'done') {
-                                window.info('Aktualizacja zakończona sukcesem');
-                            } else {
-                                window.info('Wystąpił błąd z aktualizacją: '+body)
-                            }
-                        });
-                    });
-                });
-            });
         });
     });
+});
+
+event.on('do-add', function (data) {
+    registry.addSite( data.id, data.protocol, data.mag, function(err){
+        if( err ) {
+            return window.info('Nie można dodać strony o identyfikatorze '+data.id);
+        }
+    });
+});
+
+event.on('do-update', function (data) {
+    updater.sendData( data );
 });
