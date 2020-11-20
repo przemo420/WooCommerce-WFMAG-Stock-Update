@@ -1,24 +1,54 @@
 {
-  "name": "klient",
-  "version": "0.0.0",
-  "description": "klient",
-  "author": {
-    "name": "adm"
-  },
-  "dependencies": {
-    "async": "^2.6.1",
-    "electron": "^2.0.8",
-    "electron-packager": "^12.1.1",
-    "events": "^3.0.0",
-    "express": "^4.17.1",
-    "http": "0.0.0",
-    "mssql": "^4.1.0",
-    "regedit": "^3.0.0",
-    "request": "^2.88.0"
-  },
+  "name": "WFMAGWooCommerce",
   "main": "klient.js",
+  "description": "Aplikacja pobiera stany magazynowe z bazy danych WAPRO MAG i przesyła informacje do stron internetowych opartych na WordPress WooCommerce w celu aktualizacji danych.",
+  "version": "0.0.1-alpha",
+  "homepage": "https://github.com/GeDox/WP-WooCommerce-Aktualizator-stan-w-magazynowych-WF-MAG",
+  "author": "Przemysław Kozłowski",
   "scripts": {
     "start": "electron .",
     "build": "electron-packager . --all"
-  }
+  },
+  "keywords": [
+    "stock",
+    "woocommerce",
+    "wordpress",
+    "wapro mag",
+    "e-commerce"
+  ],
+  "maintainers": [
+    {
+      "name": "Przemysław Kozłowski",
+      "email": "kontakt@sztosit.eu",
+      "web": "https://sztosit.eu"
+    }
+  ],
+  "bugs": {
+    "web": "https://github.com/GeDox/WP-WooCommerce-Aktualizator-stan-w-magazynowych-WF-MAG/issues"
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/GeDox/WP-WooCommerce-Aktualizator-stan-w-magazynowych-WF-MAG.git"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "GNU GPLv3",
+      "url": "https://www.gnu.org/licenses/gpl-3.0.txt"
+    }
+  ],
+  "dependencies": {
+    "async": "^3.2.0",
+    "electron": "^11.0.2",
+    "electron-packager": "^15.1.0",
+    "events": "^3.2.0",
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "mssql": "^6.2.3",
+    "regedit": "^3.0.3",
+    "request": "^2.88.2"
+  },
+  "contributors": [],
+  "engines": {}
 }

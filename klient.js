@@ -10,12 +10,10 @@ const ws = require('./includes/ws.js')(config, event, request);
 const updater = require('./includes/updater.js')(config, event, window, registry, request, mssql);
 const invoices = require('./includes/invoices.js')(config, event, window, registry, request, mssql);
 
-const HOUR = 3600 * 4; // seconds
-
 window.start();
 
 event.on('window-start', function () {
-    var time = HOUR;
+    var time = config.autoUpdateTime;
 
     /*request.allegro( function( err, auth ) {
         if( err ) {
@@ -29,7 +27,7 @@ event.on('window-start', function () {
     setInterval(function () {
         if (--time == 0) {
             event.emit('do-update', 'all');
-            time = HOUR;
+            time = config.autoUpdateTime;
         }
 
         window.send('update-time', time);

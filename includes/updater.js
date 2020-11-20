@@ -1,4 +1,5 @@
 const async = require('async');
+
 let config, event, window, registry, request, mssql, instance = null;
 
 class US {
@@ -11,7 +12,7 @@ class US {
 
         async.waterfall([
             function( callback ) {
-                request.list( option.url + '/wp-json/stany/v1/', function (err, body) {
+                request.list( option.url + config.REQUEST_URL, function (err, body) {
                     if (err) return callback( 'Wystapił błąd z wysłaniem danych do serwera:' + err );
 
                     shopArticles = body;
@@ -45,21 +46,23 @@ class US {
             function( art, callback ) {
                 window.info('Wysyłanie danych do ' + option.url + '.');
                         
-                request.send( option.url + '/wp-json/stany/v1/', art, function (err, body) {
+                request.send( option.url + config.REQUEST_URL, art, function (err, body) {
                     if (err) return callback(err, true);
 
-                    console.log( 'console.log', body );
-                    config.logs( 'config.logs', body );
-
-                    if (typeof body.ok !== 'undefined' && body.ok == 'done') {
-                        registry.setUpdateTime( id, function(err){
-                            if( err ) return callback( err );
-
-                            return callback( 'Aktualizacja zakończona sukcesem' );
-                        } );
-                    } else {
-                        return callback( 'Wystąpił błąd z aktualizacją: '+body );
+                    if( config.debug ) {
+                        console.log( 'console.log', body );
+                        config.logs( 'config.logs', body );
                     }
+
+                    if (typeof body.ok === 'undefined' || body.ok == 'done') {
+                        return callback( 'Wystąpił błąd z aktualizacją: '+ JSON.stringify(body, null, 2) );
+                    }
+
+                    registry.setUpdateTime( id, function(err){
+                        if( err ) return callback( err );
+
+                        return callback( 'Aktualizacja zakończona sukcesem' );
+                    } );
                 });
             }
         ], function(err, result){
@@ -76,8 +79,6 @@ class US {
             if( data == 'all' ) {
                 for( var i in arr ) {
                     var site = arr[i];
-
-                    if( i == 'wylacznikidotykowe.pl') continue;
 
                     instance.parseAndSendData( i, site, function( err, clean=false ){
                         window.info( err, clean );

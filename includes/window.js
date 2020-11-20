@@ -1,4 +1,5 @@
 ﻿const { ipcMain, app, BrowserWindow } = require('electron');
+const config = require('../config');
 
 let mainWindow = allegroWindow = event = null;
 
@@ -8,7 +9,7 @@ class Window {
     start() {
         app.once('ready', function () {
             mainWindow = new BrowserWindow({ width: 800, height: 900, maximizable: false, resizable: true });
-            mainWindow.loadURL('file://' + __dirname + '/html/template.html');
+            mainWindow.loadURL('file://' + __dirname + config.WINDOW_TEMPLATE);
 
             mainWindow.on('closed', function () {
                 mainWindow = null;

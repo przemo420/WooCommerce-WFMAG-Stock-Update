@@ -25,7 +25,7 @@
   ],
   "AKC000010": [
     "CPA-07 sprężyna",
-    54
+    46
   ],
   "AKC000011": [
     "Linka CPA-08-100",
@@ -73,7 +73,7 @@
   ],
   "AKC000034": [
     "Linka stalowa 5mm czerwona",
-    182.88
+    111.88
   ],
   "AKC000035": [
     "Linka Stalowa PVC 3mm Bezbarwna ",
@@ -105,7 +105,7 @@
   ],
   "AKC000042": [
     "CPA-05 śruba z oczkiem i nakrętką",
-    58
+    38
   ],
   "AKC000043": [
     "CPA-02 oczko  do linki",
@@ -181,7 +181,7 @@
   ],
   "ALF000011": [
     "PBI UCHWYT DO FT39",
-    132
+    112
   ],
   "ALF000012": [
     "FT-39R-2m  5..240V AC/DC; NO; 2-przew,",
@@ -189,7 +189,7 @@
   ],
   "ALF000013": [
     "FT-07RD-2m",
-    71
+    61
   ],
   "ALF000014": [
     "FT-39P-0,3m-W3F",
@@ -309,7 +309,7 @@
   ],
   "ANU000028": [
     "LA139A-J174H29 kaseta z przyciskiem bezp",
-    59
+    18
   ],
   "ANU000029": [
     "BX2 - kaseta biała z 2 otworami fi22",
@@ -577,7 +577,7 @@
   ],
   "ANU000095": [
     "LA139M-B213",
-    116
+    115
   ],
   "ANU000096": [
     "LA139T-BVM1",
@@ -789,11 +789,11 @@
   ],
   "ANU000148": [
     "LTA205-4 24V R,Y,G,B + BUZZER ŻARÓWKA",
-    4
+    0
   ],
   "ANU000149": [
     "ŻARÓWKA BIAŁA LED 24V BA9S",
-    205
+    195
   ],
   "ANU000150": [
     "ŻARÓWKA BIAŁA LED 220V BA9S",
@@ -989,7 +989,7 @@
   ],
   "ANU000204": [
     "LTA205-3 24V buzzer RYG LED bulb PNP",
-    1
+    0
   ],
   "ANU000205": [
     "LA139T-BK126B1 przełącznik niebieski",
@@ -1017,11 +1017,11 @@
   ],
   "ANU000211": [
     "LTA205-4 24V buzzer RYGB LED bulb PNP",
-    8
+    0
   ],
   "ANU000213": [
     "LTA205-3 230V AC buzzer RYG LED bulb PNP",
-    137
+    134
   ],
   "ANU000216": [
     "SOFAR 8.8 KTL-X",
@@ -1161,19 +1161,19 @@
   ],
   "BED000003": [
     "EL08F03PO-E(32)",
-    22
+    17
   ],
   "BED000004": [
     "EL08F02PO-E M8 Sn=2mm PNP/NO 45mm konM8",
-    81
+    80
   ],
   "BED000005": [
     "EL12F04PO-H(50)",
-    115
+    114
   ],
   "BED000006": [
     "EL12F04PO-H(68)",
-    43
+    41
   ],
   "BED000007": [
     "EL12F06PO-H(68)",
@@ -1253,7 +1253,7 @@
   ],
   "BED000026": [
     "EL12N10PO-H",
-    17
+    1
   ],
   "BED000027": [
     "EL40XN20PR-H",
@@ -1273,7 +1273,7 @@
   ],
   "BED000031": [
     "EL12N08PR-H",
-    12
+    9
   ],
   "BED000032": [
     "EL18F12PO(61)",
@@ -1289,7 +1289,7 @@
   ],
   "BED000035": [
     "EL12F06PR-H(68)",
-    13
+    10
   ],
   "BED000036": [
     "EL12F04PR-H(68)",
@@ -1361,7 +1361,7 @@
   ],
   "BED000053": [
     "TD-05 odbłyśnik okrągły D83",
-    16
+    6
   ],
   "BED000054": [
     "IB-D34",
@@ -1377,7 +1377,7 @@
   ],
   "BED000057": [
     "EL18F12PO(70)",
-    62
+    61
   ],
   "BED000058": [
     "TD-09 odbłyśnik Q40x60",
@@ -1497,7 +1497,7 @@
   ],
   "czu000005": [
     "Indual LQ34CN20DPO (83) PNP, NO, 20mm,",
-    8
+    4
   ],
   "czu000006": [
     "Indual LQ34CN20DPC (83) PNP NC 20mm",
@@ -1661,7 +1661,7 @@
   ],
   "Czu000046": [
     "HD-3F500P (PNP NO/NC) cable 2m",
-    2
+    0
   ],
   "Czu000047": [
     "HD-4R1KP (PNP NO/NC ) cable 2m",
@@ -1733,7 +1733,7 @@
   ],
   "Czu000064": [
     "ST-800 tester",
-    39
+    38
   ],
   "Czu000065": [
     "SL13A styk",
@@ -1829,7 +1829,7 @@
   ],
   "DAT000013": [
     "ST-S3Z-M18 S3Z FIX BRK M18 THREADED NOSE",
-    7
+    0
   ],
   "DAT000014": [
     "S8-PR-5-T51-PP RRX TRA 1M PNP M8",
@@ -1869,7 +1869,7 @@
   ],
   "DAT000023": [
     "R7 REFLECTOR RRX LASER 51x61mm M505-12 ",
-    0
+    19
   ],
   "DAT000024": [
     "R8 REFLECTOR RRX LASER 14x23mm M123-70",
@@ -1885,7 +1885,7 @@
   ],
   "DAT000027": [
     "S3Z-PH-2-M01-P BGS LASER PNP CABLE ",
-    0
+    6
   ],
   "DAT000028": [
     "S62-PA-5-M11-PP IR 600mm PNP M12 BGS",
@@ -1989,7 +1989,7 @@
   ],
   "DAT000053": [
     "S50-PH-5-F01-PP Receiver PNP NO-NC M12",
-    3
+    2
   ],
   "DAT000054": [
     "S50-PH-5-G00-XG EMITTER M12",
@@ -2097,7 +2097,7 @@
   ],
   "DAT000080": [
     "S3Z-PR-5-M01-PL BGD BGS PNP LIGHT CONN",
-    7
+    4
   ],
   "DAT000081": [
     "S12M-5-B-82 RRX-POL 1M PNP-DARK M12",
@@ -2213,7 +2213,7 @@
   ],
   "DAT000109": [
     "S62-PA-1-C11-RX PROX LONG VAC/VDC RELAY",
-    5
+    0
   ],
   "DAT000110": [
     "S62-PA-5-M31-PP",
@@ -2337,7 +2337,7 @@
   ],
   "DAT000140": [
     "R5-PLASTIC REFLECTOR - MM.75",
-    24
+    44
   ],
   "DAT000141": [
     "S15-NA-5-C11-PK PROX MID PNP M12",
@@ -2345,7 +2345,7 @@
   ],
   "DAT000142": [
     "S3Z-PH-2-B01-P RRX POL LASER PNP CABLE",
-    0
+    6
   ],
   "DAT000143": [
     "DS1-HD-SR-010-JV",
@@ -2533,11 +2533,11 @@
   ],
   "DAT000189": [
     "IS-12-G2-03 FLUSH PNP NC DOPPIA CABLE ",
-    0
+    6
   ],
   "DAT000190": [
     "IS-18-G1-S2 FLUSH PNP NO DOPPIA M12 ",
-    21
+    51
   ],
   "DAT000191": [
     "US30-PR-5-N23-OH M30 radial 2000mm ",
@@ -2661,7 +2661,7 @@
   ],
   "DAT000221": [
     "R10 40x180 mm prismatic reflector",
-    33
+    52
   ],
   "DAT000222": [
     "S50-MR-5-B01-PP rrx-pol PNP NO-NC M12",
@@ -2725,7 +2725,7 @@
   ],
   "DAT000237": [
     "R6 plastic reflector - 60x40,5mm",
-    66
+    63
   ],
   "DAT000238": [
     "AS1-LD-SR-010-J",
@@ -2837,7 +2837,7 @@
   ],
   "DAT000265": [
     "ST-5039 L-SHAPE BRACKET S3Z UCHWYT ",
-    10
+    20
   ],
   "DAT000266": [
     "S62-PL-5-M01-PP",
@@ -2885,7 +2885,7 @@
   ],
   "DAT000277": [
     "SR21-RG M8 NPN/PNP",
-    2
+    4
   ],
   "DAT000278": [
     "S62-PA-2-M21-PP",
@@ -3221,7 +3221,7 @@
   ],
   "EMA000034": [
     "C4BK styk NC (montaż dolny) EMAS",
-    37
+    34
   ],
   "EMA000035": [
     "EBM10FU10 16A",
@@ -3249,7 +3249,7 @@
   ],
   "EMA000041": [
     "PV7E30B222 KASETA STEROWNICZA ",
-    0
+    3
   ],
   "EMA000042": [
     "PV3E30B2 KASETA STEROWNICZA ",
@@ -3389,7 +3389,7 @@
   ],
   "EMA000077": [
     "C3BK styk NO (montaż dolny) EMAS",
-    32
+    29
   ],
   "EMA000078": [
     "PV5E30B22 4NO 4NC",
@@ -3417,7 +3417,7 @@
   ],
   "EMA000084": [
     "ETYKIETA AWARYJNY STOP",
-    116
+    106
   ],
   "EMA000085": [
     "CSM04 emas krzyzowa do suwnic",
@@ -3665,7 +3665,7 @@
   ],
   "FAL000024": [
     "Materiały elektryczne ",
-    1
+    3
   ],
   "FAL000025": [
     "KABEL YKY 0,6/1kV x 185 RMC MM2",
@@ -4101,7 +4101,7 @@
   ],
   "IPA000046": [
     "D7C 08 V 03 PSK-TSL",
-    4
+    0
   ],
   "IPA000047": [
     "Stycznik pomocniczy UA-2 1A1B",
@@ -6149,15 +6149,15 @@
   ],
   "KOL000001": [
     "TL70-L24-R moduł Czerwony 24V LED",
-    28
+    21
   ],
   "KOL000002": [
     "TL70-L24-A moduł Pomarańczowy 24V LED",
-    112
+    103
   ],
   "KOL000003": [
     "TL70-L24-G moduł Zielony 24V LED",
-    72
+    65
   ],
   "KOL000004": [
     "TL70-S24-P buzzer pulsujący 24V",
@@ -6169,11 +6169,11 @@
   ],
   "KOL000006": [
     "TL70-A01 przykrywka",
-    48
+    26
   ],
   "KOL000007": [
     "TL70-B01 podstawa montażowa",
-    41
+    19
   ],
   "KOL000008": [
     "TL70-A02 przykrywka z otworami",
@@ -6181,15 +6181,15 @@
   ],
   "KOL000009": [
     "TL70-L24-U moduł Niebieski 24V LED",
-    30
+    28
   ],
   "KOL000010": [
     "TL70-L24-C moduł Biały 24V LED",
-    62
+    59
   ],
   "KOL000011": [
     "TL-S80 słupek 80mm",
-    76
+    64
   ],
   "KOL000012": [
     "TL50-L24-C ( typ \"U\" )",
@@ -6233,11 +6233,11 @@
   ],
   "KOL000022": [
     "TL70-L240-A moduł Pomarańczowy 230V",
-    68
+    63
   ],
   "KOL000023": [
     "TL70-L240-G moduł Zielony LED 230V",
-    57
+    52
   ],
   "KOL000024": [
     "TL70-L240-R moduł Czerwony 230V LED",
@@ -6261,11 +6261,11 @@
   ],
   "KOL000029": [
     "TL70-S240-P Buzzer Pulsujący 230V",
-    73
+    72
   ],
   "KOL000030": [
     "TL70-L240-R moduł czerwony LED 230V",
-    68
+    63
   ],
   "KOL000031": [
     "TL-C1 UCHWYT KĄTOWY - ŚCIENNY do TL70",
@@ -6293,7 +6293,7 @@
   ],
   "KOL000037": [
     "S90AR230-B 90mm obrotowe niebieski 230V",
-    50
+    48
   ],
   "KOL000038": [
     "S90AR024-B 90mm obrotowe niebieski 24V",
@@ -6401,7 +6401,7 @@
   ],
   "KOL000064": [
     "QS90AP024-R",
-    13
+    12
   ],
   "KOL000065": [
     "QS90AP024-Y",
@@ -6605,7 +6605,7 @@
   ],
   "KOL000115": [
     "S60ADL-DC24V-A",
-    3
+    2
   ],
   "KOL000116": [
     "S60ADH-DC24V",
@@ -6677,11 +6677,11 @@
   ],
   "KOL000133": [
     "FL70-CZ uchwyt kątowy metalowy",
-    115
+    89
   ],
   "KOL000134": [
     "FL70-L2 rurka bez podstawy 168mm",
-    598
+    597
   ],
   "KOL000135": [
     "FL70-L1 rurka bez podstawy 88mm",
@@ -6705,15 +6705,15 @@
   ],
   "KOL000140": [
     "FL70-24-AB Baza z Buzzerem 24V +Przykryw",
-    224
+    151
   ],
   "KOL000141": [
     "FL70-24-R moduł Czerwony 24V AC/DC LED",
-    323
+    271
   ],
   "KOL000142": [
     "FL70-24-G moduł Zielony 24V AC/DC LED",
-    240
+    189
   ],
   "KOL000143": [
     "FL70-SL1 słupek krótki (75mm)",
@@ -6721,15 +6721,15 @@
   ],
   "KOL000144": [
     "FL70-230-AB Baza z Buzzerem 230V +Przykr",
-    132
+    110
   ],
   "KOL000145": [
     "FL70-230-R moduł Czerwony 230VAC LED",
-    81
+    62
   ],
   "KOL000146": [
     "FL70-230-G moduł Zielony 230VAC LED",
-    248
+    235
   ],
   "KOL000147": [
     "FL70-SL200 ( 168mm - długa )",
@@ -6737,35 +6737,35 @@
   ],
   "KOL000148": [
     "FL70-24-Y moduł Pomarańczowy 24V AC/DC ",
-    543
+    497
   ],
   "KOL000149": [
     "FL70-24-B moduł Niebieski 24V AC/DC LED",
-    78
+    41
   ],
   "KOL000150": [
     "FL70-24-W moduł Biały 24V AC/DC LED",
-    287
+    260
   ],
   "KOL000151": [
     "FL70-12-AB Baza z Buzzerem 12V +Przykryw",
-    193
+    186
   ],
   "KOL000152": [
     "FL70-12-R moduł Czerwony 12V AC/DC",
-    194
+    187
   ],
   "KOL000153": [
     "FL70-12-G moduł Zielony 12V AC/DC LED",
-    198
+    193
   ],
   "KOL000154": [
     "FL70-12-Y moduł Pomarańczowy 12V AC/DC ",
-    199
+    196
   ],
   "KOL000155": [
     "FL70-12-B moduł Niebieski 12V AC/DC LED",
-    10
+    9
   ],
   "KOL000156": [
     "FL70-12-W moduł Biały 12V AC/DC LED",
@@ -6773,7 +6773,7 @@
   ],
   "KOL000157": [
     "FL70-230-Y moduł Pomarańczowy 230VAC LED",
-    311
+    306
   ],
   "KOL000158": [
     "FL70-230-B moduł Niebieski 230VAC LED",
@@ -6785,7 +6785,7 @@
   ],
   "KOL000160": [
     "FL70-S podstawka plastikowa do rurek",
-    600
+    599
   ],
   "KOL000161": [
     "QS90AP230-B Niebieski 230VAC",
@@ -6945,19 +6945,19 @@
   ],
   "KOL000202": [
     "FL50-24-R 24 V AC/DC red",
-    969
+    961
   ],
   "KOL000203": [
     "FL50-24-G 24 V AC/DC green",
-    924
+    905
   ],
   "KOL000204": [
     "FL50-24-Y 24 V AC/DC amber",
-    377
+    368
   ],
   "KOL000205": [
     "FL50-24-AB 24V AC/DC 7wires,50cm,cov+buz",
-    1017
+    1008
   ],
   "KOL000206": [
     "FL50-SL160 ( 145 mm )",
@@ -6977,7 +6977,7 @@
   ],
   "KOL000210": [
     "FL70-SL120 ( 88mm - standard )",
-    1122
+    1028
   ],
   "KOL000211": [
     "QS70AP024-Y-SL1",
@@ -7017,7 +7017,7 @@
   ],
   "KOL000220": [
     "FL50-230-R 230V AC/DC red",
-    283
+    272
   ],
   "KOL000221": [
     "FL50-230-G 230V AC/DC green",
@@ -7025,11 +7025,11 @@
   ],
   "KOL000222": [
     "FL50-230-Y 230V AC/DC amber",
-    360
+    352
   ],
   "KOL000223": [
     "FL50-230-AB 230V AC/DC 7w,50cm+cover",
-    370
+    358
   ],
   "KOL000224": [
     "FL50-12-R 12V AC/DC red",
@@ -7065,7 +7065,7 @@
   ],
   "KOL000232": [
     "FL50-S podstawka bez rurki",
-    915
+    894
   ],
   "KOL000233": [
     "FL701-230-RM - kogut, montaż bezpośredni",
@@ -7073,7 +7073,7 @@
   ],
   "KOL000234": [
     "FL701-230-YM - kogut, montaż bezpośredni",
-    149
+    147
   ],
   "KOL000235": [
     "FL701-12-RM - kogut, montaż bezpośredni",
@@ -7105,7 +7105,7 @@
   ],
   "KOL000242": [
     "FL70-SL120 ( 88mm - standard ) - C",
-    2
+    0
   ],
   "KOL000243": [
     "FL701-RGM-024 --- bez rurki",
@@ -7269,7 +7269,7 @@
   ],
   "LAM000004": [
     "CZUJNIK INDUKCYJNY LR08BF15DPO-E2",
-    24
+    20
   ],
   "LAM000005": [
     "CZUJNIK INDUKCYJNY LR08AN02DPO",
@@ -7317,7 +7317,7 @@
   ],
   "LAM000016": [
     "CZUJNIK ODBICIOWY PR18-BC40DPO",
-    10
+    5
   ],
   "LAM000017": [
     "CZUJNIK ODBICIOWY PR18-BC40DPO-E2",
@@ -7337,11 +7337,11 @@
   ],
   "LAM000021": [
     "CZUJNIK ODBICIOWY PR18S-BC40DPO-E2",
-    112
+    101
   ],
   "LAM000022": [
     "CZUJNIK ODBICIOWY PR18S-BC40DPR-E2",
-    94
+    83
   ],
   "LAM000023": [
     "CZUJNIK REFLEKSYJNY PR18S-DM3DPO-E2",
@@ -7405,7 +7405,7 @@
   ],
   "LAM000038": [
     "CZUJNIK MAGNETYCZNY FT21DLO",
-    24
+    19
   ],
   "LAM000039": [
     "CZUJNIK MAGNETYCZNY FT21DPO",
@@ -7521,7 +7521,7 @@
   ],
   "LAM000068": [
     "CZUJNIK REFLEKSYJNY PR18S-DM3DPO",
-    10
+    9
   ],
   "LAM000069": [
     "CZUJNIK ODBICIOWY PR18S-BC40DPO",
@@ -7569,7 +7569,7 @@
   ],
   "LAM000080": [
     "CZUJNIK INDUKCYJNY LR08BN04DPOY",
-    1
+    13
   ],
   "LAM000081": [
     "czujnik optyczny Nadajnik PSF-TM10D",
@@ -7725,7 +7725,7 @@
   ],
   "LAM000121": [
     "CZUJNIK POJEMNOŚCIOWY CR30CF10DPO-E2",
-    31
+    25
   ],
   "LAM000122": [
     "CZUJNIK POJEMNOŚCIOWY CR30SCF10DPO",
@@ -7877,7 +7877,7 @@
   ],
   "LAM000159": [
     "CZUJNIK ZBLIŻENIOWY LE40XZSN20DPO-D",
-    0
+    10
   ],
   "LAM000160": [
     "CZUJNIK ZBLIŻENIOWY LR18CN08ATC",
@@ -7885,7 +7885,7 @@
   ],
   "LAM000161": [
     "CZUJNIK ZBLIŻENIOWY LR08BN04DPOY-E1",
-    37
+    36
   ],
   "LAM000162": [
     "CZUJNIK ZBLIŻENIOWY LR18CN08ATO",
@@ -7909,7 +7909,7 @@
   ],
   "LAM000167": [
     "CZUJNIK ZBLIŻENIOWY LE40XZSN40SBOY-D",
-    17
+    13
   ],
   "LAM000168": [
     "CZUJNIK ZBLIŻENIOWY LR08AN02DLO-E1",
@@ -7925,7 +7925,7 @@
   ],
   "LAM000171": [
     "CZUJNIK ZBLIŻENIOWY LR12XBF04DPCY-E2",
-    28
+    18
   ],
   "LAM000172": [
     "CZUJNIK ZBLIŻENIOWY LR12XCF06DPCY-E2",
@@ -7965,7 +7965,7 @@
   ],
   "LAM000181": [
     "CZUJNIK ZBLIŻENIOWY LE10SN08DPO",
-    320
+    300
   ],
   "LAM000182": [
     "CZUJNIK ZBLIŻENIOWY LE40SZSN20DPO-E2",
@@ -7973,7 +7973,7 @@
   ],
   "LAM000183": [
     "CZUJNIK ZBLIŻENIOWY LR30XCF10SBO",
-    33
+    32
   ],
   "LAM000184": [
     "CZUJNIK ZBLIŻENIOWY LR12XCF02DPOQ-E2",
@@ -8117,7 +8117,7 @@
   ],
   "LAM000219": [
     "CZUJNIK INDUKCYJNY LR12XBF04DPRY-E2",
-    21
+    19
   ],
   "LAM000220": [
     "CZUJNIK ZBLIŻENIOWY LR18AF08DPOY-E2",
@@ -8157,11 +8157,11 @@
   ],
   "LAM000229": [
     "CZUJNIK ZBLIŻENIOWY LE40SN20DPO",
-    151
+    51
   ],
   "LAM000230": [
     "CZUJNIK ZBLIŻENIOWY LE30SN15DPO",
-    44
+    34
   ],
   "LAM000231": [
     "CZUJNIK ZBLIŻENIOWY LE25SF07DPO",
@@ -8177,7 +8177,7 @@
   ],
   "LAM000236": [
     "CONNECTOR E12-N4G5-N",
-    25
+    18
   ],
   "LAM000237": [
     "CONNECTOR E12-N4G5-P",
@@ -8197,19 +8197,19 @@
   ],
   "LAM000241": [
     "CZUJNIK ZBLIŻENIOWY LR12XBF04DNOY-E2",
-    12
+    7
   ],
   "LAM000242": [
     "CZUJNIK ZBLIŻENIOWY LR12XBF04DPOY-E2",
-    471
+    458
   ],
   "LAM000243": [
     "CZUJNIK ZBLIŻENIOWY LR12XBF15DPCB-E2",
-    35
+    25
   ],
   "LAM000244": [
     "CZUJNIK ZBLIŻENIOWY LR12XBF15DPOB-E2",
-    81
+    79
   ],
   "LAM000245": [
     "CZUJNIK ZBLIŻENIOWY LR12CF02ATO",
@@ -8237,7 +8237,7 @@
   ],
   "LAM000251": [
     "CZUJNIK OPTYCZNY PR18GS-BC40DPO-E2",
-    33
+    27
   ],
   "LAM000252": [
     "CZUJNIK OPTYCZNY PR18GS-DM3DPO-E2",
@@ -8265,7 +8265,7 @@
   ],
   "LAM000261": [
     "CZUJNIK ZBLIŻENIOWY LE40XZSN20DPR-E2",
-    18
+    14
   ],
   "LAM000262": [
     "CZUJNIK ZBLIŻENIOWY LE40XZSN40DPRY-D",
@@ -8277,7 +8277,7 @@
   ],
   "LAM000264": [
     "CZUJNIK ZBLIŻENIOWY LE50SF05DPO",
-    0
+    9
   ],
   "LAM000265": [
     "CONNECTOR E12-W4F5",
@@ -8297,7 +8297,7 @@
   ],
   "LAM000270": [
     "CZUJNIK ZBLIŻENIOWY PR18-BRC10DPO-E2",
-    26
+    21
   ],
   "LAM000271": [
     "CZUJNIK ZBLIŻENIOWY PR18-BRC30DPO-E2",
@@ -8405,7 +8405,7 @@
   ],
   "LAM000301": [
     "CZUJNIK REFLEKSYJNY PR18S-DM3DPO -5m",
-    235
+    233
   ],
   "LAM000302": [
     "E8G-4pin-5m",
@@ -8461,7 +8461,7 @@
   ],
   "LAM000316": [
     "CZUJNIK ZBLIŻENIOWY LR18XAF08DPOY-E2",
-    15
+    6
   ],
   "LAM000317": [
     "CZUJNIK ZBLIŻENIOWY LR18XBF08DPOY",
@@ -8469,11 +8469,11 @@
   ],
   "LAM000318": [
     "CZUJNIK ZBLIŻENIOWY LR18XCF12DPOY-E2",
-    26
+    22
   ],
   "LAM000319": [
     "CZUJNIK ZBLIŻENIOWY LR18XCN20DPOY-E2",
-    9
+    0
   ],
   "LAM000320": [
     "CZUJNIK ZBLIŻENIOWY LR30CN15ATO-E2",
@@ -8485,7 +8485,7 @@
   ],
   "LAM000322": [
     "CZUJNIK OPTYCZNY PR18-BC40DPR-E2",
-    19
+    0
   ],
   "LAM000323": [
     "CZUJNIK OPTYCZNY PSF-PM2DPB-E3",
@@ -8497,7 +8497,7 @@
   ],
   "LAM000325": [
     "Czujnik Refleksyjny PTF-PM5DPR-E2",
-    48
+    45
   ],
   "LAM000326": [
     "CZUJNIK OPTYCZNY PTL-PM12DPR-D",
@@ -8597,7 +8597,7 @@
   ],
   "LAM000351": [
     "CZUJNIK ZBLIŻENIOWY PR18-YC10DPR-E2",
-    23
+    20
   ],
   "LAM000352": [
     "CZUJNIK ZBLIŻENIOWY PSF-PM2DPB-E1",
@@ -8637,7 +8637,7 @@
   ],
   "LAM000361": [
     "CZUJNIK ZBLIŻENIOWY LR08BF02DLOY-E2",
-    45
+    35
   ],
   "LAM000362": [
     "CZUJNIK ZBLIŻENIOWY LR08BF02DLOY",
@@ -8653,11 +8653,11 @@
   ],
   "LAM000366": [
     "CZUJNIK ZBLIŻENIOWY LR12XBN08DPOY-E2",
-    48
+    37
   ],
   "LAM000367": [
     "CZUJNIK ZBLIŻENIOWY LR12XAF04DNOY",
-    43
+    41
   ],
   "LAM000368": [
     "E8F-3pin-10m pom. proste",
@@ -8681,7 +8681,7 @@
   ],
   "LAM000373": [
     "czujnik indukcyjny LR12XBF04DNOY",
-    13
+    12
   ],
   "LAM000374": [
     "CZUJNIK INDUKCYJNY LR12XBN08DPOY",
@@ -8901,7 +8901,7 @@
   ],
   "LAM000433": [
     "CR30SCN22DPRY-E2",
-    20
+    18
   ],
   "LAM000434": [
     "CZUJNIK ZBLIŻENIOWY LR18BN08DLO-E2",
@@ -8945,7 +8945,7 @@
   ],
   "LAM000446": [
     "Odbiornik PR18-TM10DPR-E2",
-    5
+    3
   ],
   "LAM000447": [
     "CR30SCN15ATC",
@@ -9037,7 +9037,7 @@
   ],
   "LAM000469": [
     "CZUJNIK ZBLIŻENIOWY LR12XAF04DLOY",
-    226
+    213
   ],
   "LAM000470": [
     "CZUJNIK ZBLIŻENIOWY LR18XBF08DNOY-5M",
@@ -9045,7 +9045,7 @@
   ],
   "LAM000471": [
     "CZUJNIK ZBLIŻENIOWY PR18-YC10DNR-E2",
-    61
+    52
   ],
   "LAM000472": [
     "CZUJNIK ZBLIŻENIOWY LR18XBN08LIUM-E2",
@@ -9053,7 +9053,7 @@
   ],
   "LAM000473": [
     "CZUJNIK ZBLIŻENIOWY PR12-TM5D-E2",
-    38
+    36
   ],
   "LAM000474": [
     "CZUJNIK ZBLIŻENIOWY PR12-TM5DPO-E2",
@@ -9065,11 +9065,11 @@
   ],
   "LAM000476": [
     "CZUJNIK ODBICIOWY PR18S-BC80DPO",
-    31
+    30
   ],
   "LAM000477": [
     "CZUJNIK ODBICIOWY PR18S-BC80DPO-E2",
-    18
+    13
   ],
   "LAM000478": [
     "PSF-TM10DPB-E3 odbiornik",
@@ -9077,7 +9077,7 @@
   ],
   "LAM000479": [
     "LR30XBN22DPOY",
-    22
+    12
   ],
   "LAM000480": [
     "CZUJNIK ZBLIŻENIOWY LR12XCF04DPOY-E2",
@@ -9241,7 +9241,7 @@
   ],
   "LAM000524": [
     "PR18-BC40DPO-E2",
-    16
+    14
   ],
   "LAM000525": [
     "LR18XBN08DPR-E2",
@@ -9249,7 +9249,7 @@
   ],
   "LAM000526": [
     "CZUJNIK ZBLIŻENIOWY PR12-TM5DPC-E2",
-    23
+    21
   ],
   "LAM000527": [
     "CZUJNIK ZBLIŻENIOWY LR30CN15ATO",
@@ -9293,7 +9293,7 @@
   ],
   "LAM000537": [
     "LR08BF02DPOY-E1",
-    133
+    123
   ],
   "LAM000538": [
     "CZUJNIK ZBLIŻENIOWY LR18XBF08DPCY-E2",
@@ -9333,7 +9333,7 @@
   ],
   "LAM000549": [
     "LR12XBF02DPO-E2",
-    103
+    72
   ],
   "LAM000550": [
     "LR12XBN04DPO czujnik indukcyjny PNP/NO",
@@ -9345,7 +9345,7 @@
   ],
   "LAM000552": [
     "LR12XCN04DPO-E2",
-    22
+    12
   ],
   "LAM000553": [
     "LR18XBF05DLC",
@@ -9369,7 +9369,7 @@
   ],
   "LAM000558": [
     "LR08AF02DLOY-E2 1002",
-    18
+    16
   ],
   "LAM000559": [
     "LR30XBF10DLO",
@@ -9477,7 +9477,7 @@
   ],
   "LAM000589": [
     "LR30XCF10SBC",
-    8
+    7
   ],
   "LAM000590": [
     "PR18-BC40ATO",
@@ -9485,7 +9485,7 @@
   ],
   "LAM000591": [
     "LR18BF08DPCY-E2",
-    54
+    49
   ],
   "LAM000592": [
     "CR30CN15DPR",
@@ -9525,7 +9525,7 @@
   ],
   "LAM000601": [
     "LR12XBF02DPC-E2",
-    54
+    34
   ],
   "LAM000602": [
     "LR18XBF05DPO-E2",
@@ -9541,11 +9541,11 @@
   ],
   "LAM000605": [
     "LR18XCF05ATC",
-    81
+    77
   ],
   "LAM000606": [
     "CR30SCN15DPR",
-    4
+    3
   ],
   "LAM000607": [
     "LR18XBF08DNOY",
@@ -9613,7 +9613,7 @@
   ],
   "LAM000623": [
     "CZUJNIK INDUKCYJNY LR30XBN15DPO",
-    9
+    5
   ],
   "LAM000624": [
     "PR12-BC15DPR-E2",
@@ -9641,7 +9641,7 @@
   ],
   "LAM000630": [
     "PTE-BC200DFB-E2",
-    24
+    22
   ],
   "LAM000631": [
     "DB080803-1-05P",
@@ -9733,7 +9733,7 @@
   ],
   "LAM000654": [
     "LR12XBN04DNO-E2",
-    29
+    23
   ],
   "LAM000655": [
     "LR12XCF02ATO-E2",
@@ -9789,7 +9789,7 @@
   ],
   "LAM000668": [
     "CZUJNIK ZBLIŻENIOWY FT07DPO",
-    30
+    20
   ],
   "LAM000669": [
     "CZUJNIK ZBLIŻENIOWY LE10SF05DPC",
@@ -9993,7 +9993,7 @@
   ],
   "LAM000719": [
     "LR18XCF08SBOY",
-    27
+    25
   ],
   "LAM000720": [
     "LR18XCF08SBOY-E2",
@@ -10097,7 +10097,7 @@
   ],
   "LAM000745": [
     "QE12-N4F5",
-    62
+    32
   ],
   "LAM000746": [
     "CZUJNIK ZBLIŻENIOWY LR12XBN04DPR",
@@ -10381,7 +10381,7 @@
   ],
   "MAG000062": [
     "SE12-N4G15-P",
-    100
+    80
   ],
   "MAG000063": [
     "Chips LED COB 70W",
@@ -10421,7 +10421,7 @@
   ],
   "Mea000006": [
     "MDR-20-24 zasilacz",
-    11
+    10
   ],
   "Mea000007": [
     "ZASILACZ DIN 24V/2,50A MDR-60-24",
@@ -10501,7 +10501,7 @@
   ],
   "Mic000019": [
     "ME8-N3F3 PVC",
-    28
+    25
   ],
   "Mic000020": [
     "ME8-N3G10-U    PUR/PVC",
@@ -11001,11 +11001,11 @@
   ],
   "MIN000014": [
     "ME8-N3F2 (C08F3A1-200-010)",
-    37
+    27
   ],
   "MIN000015": [
     "ME12-N4G2 (C12F4B2-200-022)",
-    1
+    0
   ],
   "MIN000016": [
     "ME12-N4F2  (C12F4A2-200-022)",
@@ -11013,7 +11013,7 @@
   ],
   "MIN000017": [
     "ME12-N8F5 (C12F8A2-500-016)",
-    17
+    13
   ],
   "MIN000018": [
     "ME12-N8G5 (C12F8B2-500-016)",
@@ -11061,7 +11061,7 @@
   ],
   "MIN000029": [
     "ME8-N4G (46360-000)",
-    30
+    20
   ],
   "MIN000030": [
     "ME8-W3F",
@@ -12861,7 +12861,7 @@
   ],
   "POZ000492": [
     "P1EC400E40 kaseta",
-    4
+    101
   ],
   "POZ000493": [
     "FAI8/BP-0A",
@@ -20569,7 +20569,7 @@
   ],
   "POZ002568": [
     "Przewód PU 8x6mm",
-    90
+    590
   ],
   "POZ002569": [
     "RTLF/W+W",
@@ -20949,7 +20949,7 @@
   ],
   "POZ002678": [
     "AE10 styk NO",
-    454
+    464
   ],
   "POZ002679": [
     "KG-3013 Czujnik magnetyczny ",
@@ -22929,7 +22929,7 @@
   ],
   "POZ003194": [
     "Czujnik pola magnetycznego BMF 305K",
-    10
+    0
   ],
   "POZ003195": [
     "Uchwyt opaska siłownika mimi ISO D 25/32",
@@ -23385,7 +23385,7 @@
   ],
   "POZ003311": [
     "OMRON E2C-X1A",
-    3
+    0
   ],
   "POZ003313": [
     "układ scalony AD532JH",
@@ -24837,7 +24837,7 @@
   ],
   "POZ003679": [
     "FL50-L145 ( 145mm ) sama rurka",
-    884
+    863
   ],
   "POZ003680": [
     "HTCEU-2359T",
@@ -25193,7 +25193,7 @@
   ],
   "POZ003771": [
     "SH-4/G 24 V DC FUJI CONNECOTOR",
-    5
+    0
   ],
   "POZ003772": [
     "CVM1-CPU11-V2",
@@ -25533,7 +25533,7 @@
   ],
   "POZ003856": [
     "FL50-24-AB + G + R + SL1",
-    68
+    60
   ],
   "POZ003857": [
     "PID 500-1-0-01",
@@ -26093,7 +26093,7 @@
   ],
   "POZ003996": [
     "Uchwyt kątowy do czujnika - M18",
-    10
+    9
   ],
   "POZ003997": [
     "Uchwyt kątowy do czujnika - M30",
@@ -26385,11 +26385,11 @@
   ],
   "POZ004069": [
     "SC-0 100-110V",
-    10
+    9
   ],
   "POZ004070": [
     "SMC D-M9BVL",
-    10
+    0
   ],
   "POZ004071": [
     "BMF002Z",
@@ -26539,6 +26539,114 @@
     "NTD29/55T",
     0
   ],
+  "POZ004108": [
+    "ZSO/BRN-1-150",
+    0
+  ],
+  "POZ004109": [
+    "P1KS002",
+    0
+  ],
+  "POZ004110": [
+    "P1KE002",
+    0
+  ],
+  "POZ004111": [
+    "FS1 165327",
+    0
+  ],
+  "POZ004112": [
+    "ZZG 5509330100",
+    0
+  ],
+  "POZ004113": [
+    "CV500-CIF01",
+    0
+  ],
+  "POZ004114": [
+    "Zasilacz PSU-160W-XT",
+    0
+  ],
+  "POZ004115": [
+    "IME6/27820",
+    0
+  ],
+  "POZ004116": [
+    "Panel LCD 7``",
+    0
+  ],
+  "POZ004117": [
+    "R/AC/K1646",
+    0
+  ],
+  "POZ004118": [
+    "D/S-IRW4",
+    0
+  ],
+  "POZ004119": [
+    "DI2436IRW",
+    0
+  ],
+  "POZ004120": [
+    "DM2036I/S",
+    0
+  ],
+  "POZ004121": [
+    "D/2040/I4",
+    0
+  ],
+  "POZ004122": [
+    "R6-JXL-2A-2XL",
+    9
+  ],
+  "POZ004123": [
+    "LR12XAF04DLOY-0,3-WF  1-4 PIN",
+    0
+  ],
+  "POZ004124": [
+    "Czujnik odbiciowy",
+    0
+  ],
+  "POZ004125": [
+    "Lampka kontrolna LED",
+    0
+  ],
+  "POZ004126": [
+    "6ES7132-4HN01-0AB0",
+    0
+  ],
+  "POZ004127": [
+    "OY156000 czujnik optyczny",
+    0
+  ],
+  "POZ004128": [
+    "3RN2010-1BW30",
+    0
+  ],
+  "POZ004129": [
+    "Siemens 7ML1510-3KG01",
+    0
+  ],
+  "POZ004130": [
+    "SMC ISE30A-01-N",
+    5
+  ],
+  "POZ004131": [
+    "Separator pętli prądowej AR771",
+    2
+  ],
+  "POZ004132": [
+    "Zestaw naprawczy",
+    0
+  ],
+  "POZ004133": [
+    "Pompa siłownik",
+    0
+  ],
+  "POZ004134": [
+    "Dust profi LED 60 NW",
+    0
+  ],
   "Prz000012": [
     "stycznik TX3RT-1016220VAC1NC9A",
     0
@@ -26637,7 +26745,7 @@
   ],
   "PRZ000058": [
     "AL02 łącznik mocujący ",
-    239
+    219
   ],
   "PRZ000059": [
     "LA42(A)P/B przycisk płaski bez blokad",
@@ -26673,7 +26781,7 @@
   ],
   "PRZ000069": [
     "LA42(A)PD/G",
-    0
+    10
   ],
   "PRZ000070": [
     "LA42(A)PD/R przycisk podświetlany bez bl",
@@ -26909,11 +27017,11 @@
   ],
   "Prz000133": [
     "FE12-NF-L złacze żeńskie M12, proste, lu",
-    70
+    69
   ],
   "Prz000134": [
     "FE12-NG-L złącze żeńskie M12, kątowe, lu",
-    15
+    11
   ],
   "Prz000135": [
     "FE8N3F-0,3M-E12W4F przewód dwustronny",
@@ -26945,7 +27053,7 @@
   ],
   "PRZ000142": [
     "AL01/G 24V dioda LED w oprawie ZIELONA",
-    16
+    26
   ],
   "PRZ000143": [
     "AL01/R 24V dioda LED w oprawie CZERWONA",
@@ -27137,7 +27245,7 @@
   ],
   "PRZ000190": [
     "AL01/G/220V",
-    57
+    37
   ],
   "PRZ000191": [
     "AL01/Y/220V",
@@ -27461,7 +27569,7 @@
   ],
   "Prz000273": [
     "QE12-N4G5 przewód M12/4p kątowy 5m",
-    31
+    25
   ],
   "Prz000274": [
     "QE12-N4G2 przewód M12/4p kątowy 2m",
@@ -27701,7 +27809,7 @@
   ],
   "SIG000004": [
     "SE8-W3F złącze męskie M8/3p skręcane",
-    126
+    96
   ],
   "SIG000005": [
     "SE12-N4G2   ",
@@ -27709,23 +27817,23 @@
   ],
   "SIG000006": [
     "SE12-N4G5",
-    200
+    148
   ],
   "SIG000007": [
     "SE12-N4F2",
-    71
+    66
   ],
   "SIG000008": [
     "SE12-N4F5",
-    7
+    4
   ],
   "SIG000009": [
     "SE12-N4G2-P",
-    65
+    58
   ],
   "SIG000010": [
     "SE12-N4G5-P",
-    154
+    149
   ],
   "SIG000011": [
     "SE12-N5G5  kabel 5m M12/5pin kątowy żeńs",
@@ -27817,7 +27925,7 @@
   ],
   "SIG000034": [
     "SE12-NF złącze proste M12/4p skręcane",
-    170
+    166
   ],
   "SIG000035": [
     "SE8-N3F BRAK ",
@@ -27837,7 +27945,7 @@
   ],
   "SIG000039": [
     "SE12-N4G2-N",
-    46
+    36
   ],
   "SIG000040": [
     "SE12-N5G",
@@ -27961,7 +28069,7 @@
   ],
   "SIG000070": [
     "SE12-NF-M",
-    9
+    8
   ],
   "SIG000071": [
     "SE12-N8F PG7 M12/8pin żeń prosty",
@@ -28001,7 +28109,7 @@
   ],
   "SIG000080": [
     "SE12-WF",
-    50
+    36
   ],
   "SIG000081": [
     "SE8-N4F5-U PUR/PUR",
@@ -28469,7 +28577,7 @@
   ],
   "SMC000004": [
     "SMC D-M9BL",
-    100
+    60
   ],
   "SMC000005": [
     "SMC D-M9B",
@@ -28841,7 +28949,7 @@
   ],
   "TOU000106": [
     "TB22-M3DPO-CABEL 20 CM",
-    60
+    56
   ],
   "TOU000107": [
     "TB22-B3DPO-CABEL 20CM",
@@ -28853,7 +28961,7 @@
   ],
   "TOU000109": [
     "TB22-M6DPR-CABEL 20 CM ",
-    82
+    80
   ],
   "TOU000110": [
     "TB22-B6DNR-CABEL 20 CM",
@@ -29309,7 +29417,7 @@
   ],
   "WYŁ000051": [
     "MIKROWYŁĄCZNIK Z-15GD",
-    6
+    0
   ],
   "WYŁ000052": [
     "MIKROWYŁĄCZNIK Z-15GW22",
@@ -29417,7 +29525,7 @@
   ],
   "WYŁ000081": [
     "WYŁĄCZNIK KRAŃCOWY SN2170-SL7-C-R",
-    96
+    94
   ],
   "WYŁ000082": [
     "WYŁĄCZNIK KRAŃCOWY SN3107-SP-C",
@@ -29537,7 +29645,7 @@
   ],
   "WYŁ000115": [
     "WYŁĄCZNIK KRAŃCOWY SND4111-SP-B",
-    2
+    0
   ],
   "WYŁ000116": [
     "WYŁĄCZNIK KRAŃCOWY SND4191-SL6-B-K2",
@@ -29577,7 +29685,7 @@
   ],
   "WYŁ000125": [
     "WYŁĄCZNIK KRAŃCOWY SND6118-SL1-B",
-    724
+    484
   ],
   "WYŁ000126": [
     "WYŁĄCZNIK KRAŃCOWY SLD7140-C-10-1,5m",
@@ -29597,11 +29705,11 @@
   ],
   "WYŁ000130": [
     "WYŁĄCZNIK KRAŃCOWY SN7121",
-    50
+    45
   ],
   "WYŁ000131": [
     "MIKROWYŁĄCZNIK Z-15G",
-    106
+    92
   ],
   "WYŁ000132": [
     "MIKROWYŁĄCZNIK Z-20GQ",
@@ -29649,7 +29757,7 @@
   ],
   "WYŁ000144": [
     "WYŁĄCZNIK KRAŃCOWY SND6104-SP-B",
-    51
+    50
   ],
   "WYŁ000145": [
     "WYŁĄCZNIK KRAŃCOWY SN3112-SP-B-2",
@@ -29693,7 +29801,7 @@
   ],
   "WYŁ000157": [
     "WYŁACZNIK KRAŃCOWY SND4104-SP-B-P",
-    200
+    190
   ],
   "WYŁ000158": [
     "WYŁACZNIK KRAŃCOWY SND4111-SP-B LAT",
@@ -29713,11 +29821,11 @@
   ],
   "WYŁ000162": [
     "WYŁACZNIK KRAŃCOWY SND4118-SP-B",
-    174
+    171
   ],
   "WYŁ000163": [
     "Z-15GQ22",
-    115
+    95
   ],
   "WYŁ000164": [
     "WYŁACZNIK KRAŃCOWY SN4108-SP-B",
@@ -29745,7 +29853,7 @@
   ],
   "WYŁ000170": [
     "WYŁĄCZNIK KRAŃCOWY SND4112-SP-B",
-    223
+    218
   ],
   "WYŁ000171": [
     "WYŁĄCZNIK KRAŃCOWY  SN6172-SP-B",
@@ -29761,11 +29869,11 @@
   ],
   "WYŁ000174": [
     "WYŁĄCZNIK KRAŃCOWY SN6108-SP-B",
-    27
+    26
   ],
   "WYŁ000175": [
     "WYŁĄCZNIK KRAŃCOWY SN6112-SP-B",
-    34
+    28
   ],
   "WYŁ000178": [
     "SLC12-4DEOP-H(40) czujnik Indukcyjny M12",
@@ -29805,7 +29913,7 @@
   ],
   "WYŁ000187": [
     "WYŁĄCZNIK KRAŃCOWY SND4104-SP-B",
-    141
+    134
   ],
   "WYŁ000188": [
     "CPA-02 oczko  do linki",
@@ -29841,7 +29949,7 @@
   ],
   "WYŁ000198": [
     "WYŁĄCZNIK KRAŃCOWY SN4104-SP-B",
-    96
+    93
   ],
   "WYŁ000199": [
     "WYŁĄCZNIK KRAŃCOWY SN4108-SP-B",
@@ -29861,7 +29969,7 @@
   ],
   "WYŁ000203": [
     "WYŁĄCZNIK KRAŃCOWY SN6111-SP-B",
-    20
+    19
   ],
   "WYŁ000205": [
     "WYŁĄCZNIKI KRAŃCOWE SN2162-SP-B",
@@ -29869,11 +29977,11 @@
   ],
   "WYŁ000206": [
     "WYŁĄCZNIK KRAŃCOWY SN6104-SP-B",
-    12
+    10
   ],
   "WYŁ000207": [
     "WYŁĄCZNIK KRAŃCOWY SN4104-SP-B-P",
-    1
+    2
   ],
   "WYŁ000208": [
     "WYŁĄCZNIK KRAŃCOWY SN4169-SP-B",
@@ -29889,7 +29997,7 @@
   ],
   "WYŁ000211": [
     "WYŁĄCZNIK KRAŃCOWY SND4108-SP-B-P",
-    42
+    20
   ],
   "WYŁ000212": [
     "WYŁĄCZNIK KRAŃCOWY SN4108-SP-B-P",
@@ -29997,7 +30105,7 @@
   ],
   "WYŁ000241": [
     "CP7170-SL22-C-R-240-E",
-    15
+    5
   ],
   "WYŁ000242": [
     "WYŁĄCZNIK KRAŃCOWY SND4172-SP-B",
@@ -30021,7 +30129,7 @@
   ],
   "WYŁ000247": [
     "Z-15GW22",
-    47
+    27
   ],
   "WYŁ000248": [
     "SN4104-SP-B-P",
@@ -30085,7 +30193,7 @@
   ],
   "WYŁ000263": [
     "SLC12-4DEO Indual (zam. LR12BF04DLOY)",
-    49
+    34
   ],
   "WYŁ000264": [
     "SND4104-SL2-B",
@@ -30137,7 +30245,7 @@
   ],
   "WYŁ000276": [
     "SMN4191-SL-D(K2)",
-    61
+    56
   ],
   "WYŁ000277": [
     "SND2111-SP-B",
@@ -30493,7 +30601,7 @@
   ],
   "WYŁ000365": [
     "wyłącznik krańcowy SND6108-SP-B",
-    24
+    20
   ],
   "WYŁ000366": [
     "SND4112-SL9-B",
@@ -30625,7 +30733,7 @@
   ],
   "WYŁ000398": [
     "CP8171-S22-C-R-240-E",
-    8
+    7
   ],
   "WYŁ000399": [
     "FS-81-10 (twin) - USB",
@@ -30661,11 +30769,11 @@
   ],
   "WYŁ000407": [
     "SND2101-SL6-D",
-    2
+    0
   ],
   "WYŁ000408": [
     "WYŁĄCZNIK KRAŃCOWY SND4107-SP-B",
-    34
+    33
   ],
   "WYŁ000409": [
     "WYŁĄCZNIK KRAŃCOWY SND2108-SP-B",
@@ -30753,7 +30861,7 @@
   ],
   "XIN000011": [
     "LAY4-BD53 3pos. spring return ",
-    309
+    303
   ],
   "XIN000012": [
     "LAY4-BD41 2pos. spring return ",
@@ -31033,7 +31141,7 @@
   ],
   "XIN000081": [
     "LAY4-BW3661 24VDC blue button blue led",
-    212
+    202
   ],
   "XIN000082": [
     "LAY4-BW3561 24VDC yellow button yell led",
@@ -31281,7 +31389,7 @@
   ],
   "ŻAR000013": [
     "CL024W-12-D biała 24V LED BA15D 12xSMD",
-    1
+    0
   ],
   "ŻAR000014": [
     "CL120R-15-D BA15D",

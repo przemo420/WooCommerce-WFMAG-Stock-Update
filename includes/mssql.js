@@ -70,6 +70,7 @@ class SQLRequest {
 
                         switch( SKUType ) {
                             case SKU_TYPE_MIN: {
+								if( tempCount == 0 ) tempCount = productCount;
                                 if( productCount < tempCount ) tempCount = productCount;
                                 //console.log( 'SKU-TYPE-MIN', productCount, mValue, pValue );
                             } break;
