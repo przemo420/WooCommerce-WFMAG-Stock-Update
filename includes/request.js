@@ -9,7 +9,10 @@ class Request {
                     return cb(err);
                 }
 
-				console.log(body);
+                if( config.debug ) {
+                    console.log('Request->send(', url, ',', art, ') =>', body);
+                }
+
                 return cb(null, body);
             });
     }

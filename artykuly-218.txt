@@ -1,8 +1,4 @@
 {
-  "(141548)": [
-    "nowy artykul (141548)",
-    0
-  ],
   "Akc000016": [
     "PRZEWÓD OMY 3X1,5 H03VV-F",
     15
@@ -61,19 +57,27 @@
   ],
   "AKL000001": [
     "ASH-55CHW/F1 15kW, 208V-230V/50HZ",
-    1
+    0
   ],
   "AKL000002": [
     "ASH-65CHW/F1 18kW, 380V-400V/50HZ",
-    2
+    0
   ],
   "AKL000003": [
     "TUBA (MIEDZIANA, POŁĄCZENIOWA)",
-    26
+    0
   ],
   "AKL000004": [
     "VACUME PUMP 4L",
-    1
+    0
+  ],
+  "AKL000005": [
+    "ASH-35CHW/F1 9,5kW, 208V-230V/50Hz",
+    0
+  ],
+  "AKL000006": [
+    "WATER TANK 50L ",
+    0
   ],
   "ANU000011": [
     "LA139T-BD21 Przełącznik 2-poz. samobloku",
@@ -233,7 +237,7 @@
   ],
   "ANU000216": [
     "SOFAR 8.8 KTL-X",
-    256
+    179
   ],
   "ANU000217": [
     "SOFAR 20 TL-G2",
@@ -285,7 +289,7 @@
   ],
   "ANU000229": [
     "SOFAR 10 KTL-X",
-    23
+    12
   ],
   "ANU000230": [
     "QM-HC 120 370W Long FB 1776x1052x35mm",
@@ -385,19 +389,19 @@
   ],
   "BYE000001": [
     "PANEL GRZEWCZY A0906P (WHITE FRAME)",
-    196
+    188
   ],
   "BYE000002": [
     "PANEL GRZEWCZY A0906P (SILVER FRAME)",
-    99
+    98
   ],
   "BYE000003": [
     "PANEL GRZEWCZY A1206P (WHITE FRAME)",
-    226
+    223
   ],
   "BYE000004": [
     "PANEL GRZEWCZY A1206P (SILVER FRAME)",
-    92
+    91
   ],
   "BYE000005": [
     "PANEL GRZEWCZY HL0906P",
@@ -405,7 +409,7 @@
   ],
   "BYE000006": [
     "PANEL GRZEWCZY HL1207P",
-    59
+    47
   ],
   "BYE000007": [
     "PANEL GRZEWCZY A1207P (PRINTED)",
@@ -413,7 +417,19 @@
   ],
   "BYE000008": [
     "THERMOSTAT",
-    296
+    280
+  ],
+  "BYE000009": [
+    "PANEL GRZEWCZY HL0603P (PRINTED)",
+    120
+  ],
+  "BYE000010": [
+    "PANEL GRZEWCZY HL1203P (PRINTED)",
+    10
+  ],
+  "BYE000011": [
+    "THERMOSTAT 230W WiFi",
+    30
   ],
   "COR000001": [
     "TU-0,6-9W-600 Glass V1 6000K",
@@ -565,7 +581,7 @@
   ],
   "FOC000002": [
     "Znakowarka Fiber 30W X,Y,Z 190x190 V2",
-    8
+    6
   ],
   "FOC000003": [
     "Znakowarka Fiber 50W X,Y,Z 300x300 V2",
@@ -589,7 +605,7 @@
   ],
   "FOC000008": [
     "Obrotnica stołowa",
-    10
+    9
   ],
   "FOC000009": [
     "Znakowarka CO2 30W 190x190",
@@ -601,11 +617,15 @@
   ],
   "FOC000011": [
     "Znakowarka Fiber 20W EASY",
-    5
+    4
   ],
   "FOC000012": [
     "soczewka CO2 300x300",
     1
+  ],
+  "FOC000013": [
+    "obrotnica automatyczna",
+    0
   ],
   "FOTOA000001": [
     "Szyna montażowa 40x40 L=4,14 6060 T6",
@@ -1077,7 +1097,7 @@
   ],
   "Hua000018": [
     "HBS3 150W Philips",
-    0
+    2
   ],
   "Hua000019": [
     "uchwyt HBS3",
@@ -1125,7 +1145,7 @@
   ],
   "Hua000030": [
     "HBS1 100W Philips",
-    9
+    14
   ],
   "Hua000031": [
     "Lampa LED 240W Philips HBS3 ",
@@ -1149,7 +1169,7 @@
   ],
   "HUA000036": [
     "Lampa uliczna SL-BS 80W  LED",
-    59
+    56
   ],
   "Hua000037": [
     "HBS3 200W Philips + uchwyt ",
@@ -1205,11 +1225,11 @@
   ],
   "HUA000050": [
     "LED panel PLW 595X595 40W 4000K",
-    188
+    150
   ],
   "HUA000051": [
     "Ramka 600x600 ",
-    1385
+    1384
   ],
   "HUA000052": [
     "lampa spot light 30w 3000K szara ",
@@ -1229,7 +1249,7 @@
   ],
   "Hua000056": [
     "LumiPro3 150W",
-    0
+    1
   ],
   "Hua000057": [
     "LumiPro3 200W",
@@ -1237,11 +1257,11 @@
   ],
   "Hua000058": [
     "LumiPro3 150W DS",
-    30
+    10
   ],
   "HUA000059": [
     "Lampa uliczna SL-BS2 80W LED IND-STB",
-    184
+    178
   ],
   "Hua000060": [
     "HBS3 260W H+",
@@ -1249,7 +1269,7 @@
   ],
   "Hua000061": [
     "LumiPro2 HF 100W",
-    10
+    7
   ],
   "Hua000062": [
     "Klosz AL do lampy HBS3",
@@ -1265,11 +1285,11 @@
   ],
   "HUA000065": [
     "Lampa uliczna SL-BS2 120W LED IND-STB",
-    260
+    249
   ],
   "HUA000066": [
     "LED panel PLW Lumi 595x595 50W",
-    860
+    760
   ],
   "Hua000067": [
     "HBS4L 150W + sensor",
@@ -1293,15 +1313,15 @@
   ],
   "Hua000072": [
     "LumiPro 5 150W 1-10V 4000K",
-    28
+    0
   ],
   "Hua000073": [
     "LumiPro 5 200W 1-10V 4000K",
-    573
+    467
   ],
   "Hua000074": [
     "LumiPro 5 200W D/S 4000K",
-    73
+    29
   ],
   "Hua000075": [
     "Driver 150W Sosen CN",
@@ -1313,7 +1333,7 @@
   ],
   "Hua000077": [
     "Uchwyt LumiPro 4/5",
-    49
+    45
   ],
   "Hua000078": [
     "Klosz AL do lampy HBS4 150 W",
@@ -1489,7 +1509,7 @@
   ],
   "KAT00211": [
     "Panel szklany P-(228)-2g+2g+2g-W-(P)",
-    0
+    1
   ],
   "KAT00213": [
     "HBS2 LED 150W Nichia",
@@ -1649,7 +1669,7 @@
   ],
   "KAT00289": [
     "Moduł 1/2 zaślepka-B",
-    769
+    768
   ],
   "KAT00292": [
     "Panel szklany 86*157mm 2g+roleta WHITE",
@@ -1745,11 +1765,11 @@
   ],
   "KAT00320": [
     "Panel szklany P-(157)-1g+2g-W",
-    11
+    13
   ],
   "KAT00321": [
     "Panel szklany P-(228)-1g+2g+2g-B-(P)",
-    1
+    0
   ],
   "KAT00322": [
     "FL70-12-AB Baza z buzzerem 12V + przykry",
@@ -1765,7 +1785,7 @@
   ],
   "KAT00334": [
     "Mechanizm dotykowy MT-2g1",
-    798
+    793
   ],
   "KAT00335": [
     "Mechanizm MT-102B",
@@ -1785,7 +1805,7 @@
   ],
   "KAT00350": [
     "Mechanizm dotykowy kurtyny MT-K-WIFI",
-    672
+    2506
   ],
   "KAT00354": [
     "Mechanizm MT-202B",
@@ -1793,7 +1813,7 @@
   ],
   "KAT00361": [
     "Mechanizm dotykowy MT-1g1",
-    46
+    45
   ],
   "KAT00362": [
     "MT-102 Black ",
@@ -1913,11 +1933,11 @@
   ],
   "KAT00402": [
     "Ramka szklana H2-P1-(228)-1g-W",
-    10
+    2
   ],
   "KAT00404": [
     "Ramka szklana H2-P1-(228)-2g-W",
-    2
+    1
   ],
   "KAT00405": [
     "Panel szklany P-(157)-3g+1g-B",
@@ -1925,19 +1945,19 @@
   ],
   "KAT00406": [
     "Mechanizm gniazda MG-FR-B",
-    2284
+    3549
   ],
   "KAT00407": [
     "Mechanizm gniazda MG-FR-W",
-    2733
+    4028
   ],
   "KAT00408": [
     "Panel szklany bezprzewodowy RT-2g1-W",
-    263
+    257
   ],
   "KAT00409": [
     "Panel szklany bezprzewodowy RT-3g1-W",
-    201
+    194
   ],
   "KAT00410": [
     "Panel szklany P-(228)-1g1+kurt+kurt-B",
@@ -1949,7 +1969,7 @@
   ],
   "KAT00412": [
     "Ramka szklana H2-P1-(228)-1g-B",
-    9
+    8
   ],
   "KAT00413": [
     "Panel szklany P-(228)-kurt+kurt+kurt-B",
@@ -1977,31 +1997,31 @@
   ],
   "KAT00419": [
     "Ramka szklana R-1-W",
-    295
+    986
   ],
   "KAT00420": [
     "Ramka szklana R-1-B",
-    637
+    530
   ],
   "KAT00421": [
     "Ramka szklana R-2-B",
-    1943
+    2876
   ],
   "KAT00422": [
     "Ramka szklana R-3-W",
-    1293
+    1281
   ],
   "KAT00423": [
     "Ramka szklana R-3-B",
-    650
+    634
   ],
   "KAT00424": [
     "Ramka szklana R-4-W",
-    239
+    235
   ],
   "KAT00425": [
     "Ramka szklana R-4-B",
-    188
+    181
   ],
   "KAT00426": [
     "Panel szklany P-(228)-kurt+kurt+1g-W",
@@ -2013,7 +2033,7 @@
   ],
   "KAT00431": [
     "Panel szklany P-299-B",
-    71
+    462
   ],
   "KAT00432": [
     "Panel szklany P-(299)-1g+2g+1g+1g-B",
@@ -2037,15 +2057,15 @@
   ],
   "KAT00437": [
     "Mechanizm gniazda MG-FRK-B",
-    399
+    371
   ],
   "KAT00439": [
     "Mechanizm gniazda MG-FRK-W",
-    73
+    24
   ],
   "KAT00443": [
     "Panel szklany P-(299)-1g+1g+1g+1g-B",
-    0
+    4
   ],
   "KAT00447": [
     "koszty dojazdu",
@@ -2149,7 +2169,7 @@
   ],
   "KAT00477": [
     "Panel szklany P-(299)-1g+1g+1g+1g-W",
-    1
+    2
   ],
   "KAT00478": [
     "Panel szklany P-(157)-kurtyna+2g-W",
@@ -2205,11 +2225,11 @@
   ],
   "KAT00494": [
     "Panel szklany P-(157)-2g+2g-B-(P)",
-    2
+    6
   ],
   "KAT00495": [
     "Panel szklany P-(157)-1g+2g-B-(P)",
-    0
+    3
   ],
   "KAT00496": [
     "Panel szklany P-(157)-kurt+kurt-W-(P)",
@@ -2221,7 +2241,7 @@
   ],
   "KAT00500": [
     "Panel szklany P-(157)-2g+1g-B-(P)",
-    2
+    1
   ],
   "KAT00503": [
     "Ramka szklana H1-P1-(157)-2g-B-(P)",
@@ -2245,7 +2265,7 @@
   ],
   "KAT00519": [
     "Panel szklany P-(157)-1g+2g-W-(P)",
-    2
+    4
   ],
   "KAT00520": [
     "Panel szklany P-(299)-kt+kt+kt+1g-B-(P)",
@@ -2309,7 +2329,7 @@
   ],
   "KAT00537": [
     "Panel szklany P-(157)-2g+1g-W-(P)",
-    3
+    0
   ],
   "KAT00538": [
     "Panel szklany P-(299)-2g+1g+1g+1g-W-(P)",
@@ -2409,15 +2429,15 @@
   ],
   "KAT00573": [
     "Panel szklany P-(228)-1g+2g+1g-B-(P)",
-    1
+    0
   ],
   "KAT00574": [
     "Moduł 1/2 AUDIO-W",
-    127
+    157
   ],
   "KAT00575": [
     "Moduł 1/2 AUDIO-B",
-    36
+    66
   ],
   "KAT00577": [
     "Panel szklany P-(157)-2g+kurtyna-W-(P)",
@@ -2437,7 +2457,7 @@
   ],
   "KAT00588": [
     "Panel szklany H1-P2-(228)-1g+1g-W",
-    4
+    2
   ],
   "KAT00589": [
     "Panel szklany H1-P2-(228)-2g+2g-W",
@@ -2481,7 +2501,7 @@
   ],
   "KAT00603": [
     "Panel szklany P-(86)-2g-G",
-    6
+    3
   ],
   "KAT00604": [
     "Ramka szklana H1-P1-(157)-3g-B-(P)",
@@ -2509,7 +2529,7 @@
   ],
   "KAT00610": [
     "Panel szklany P-(86)-1g-G",
-    25
+    23
   ],
   "KAT00612": [
     "Panel szklany P-(86)-kurtyna-G",
@@ -2517,7 +2537,7 @@
   ],
   "KAT00614": [
     "Ramka szklana H1-P1-(157)-1g-G",
-    1
+    7
   ],
   "KAT00615": [
     "Panel szklany P-(228)-2g+2g+1g-B-(P)",
@@ -2525,7 +2545,7 @@
   ],
   "KAT00617": [
     "Panel szklany P-(86)-3g-G",
-    2
+    7
   ],
   "KAT00618": [
     "Ramka szklana H1-P1-(157)-3g-W-(P)",
@@ -2561,7 +2581,7 @@
   ],
   "KAT00627": [
     "Panel szklany P-(157)-2g+1g-G",
-    2
+    1
   ],
   "KAT00628": [
     "Panel szklany P-(299)-1g+2g+3g+kur-B-(P)",
@@ -2581,7 +2601,7 @@
   ],
   "KAT00641": [
     "Panel szklany P-(157)-1g+1g-G",
-    2
+    0
   ],
   "KAT00642": [
     "Panel szklany P-(157)-2g+2g-G",
@@ -2689,7 +2709,7 @@
   ],
   "KAT00699": [
     "Ramka szklana H2-P1-(228)-2g-B-(P)",
-    4
+    3
   ],
   "KAT00700": [
     "Panel szklany P-(229)-1g+2g+2g+2g-W-(P)",
@@ -2785,7 +2805,7 @@
   ],
   "KAT00742": [
     "Ramka szklana H1-P1-(157)-2g-G",
-    4
+    3
   ],
   "KAT00744": [
     "Panel szklany P-(228)-1g+kurt+kurt-B",
@@ -2945,7 +2965,7 @@
   ],
   "KAT00811": [
     "Panel szklany P-(157)-ktx+ktx-W-(P)",
-    0
+    3
   ],
   "KAT00812": [
     "Panel szklany P-(157)-ktx+ktx-W TEST",
@@ -2953,7 +2973,7 @@
   ],
   "KAT00814": [
     "Panel szklany P-(86)-ktx-G",
-    8
+    5
   ],
   "KAT00815": [
     "Panel szklany P-(157)-3g+0-W",
@@ -2969,7 +2989,7 @@
   ],
   "KAT00818": [
     "Panel szklany P-(157)-ktx+ktx-B",
-    9
+    3
   ],
   "KAT00820": [
     "Panel szklany P-(228)-2g+ktx+ktx-W",
@@ -3101,7 +3121,7 @@
   ],
   "KAT00858": [
     "Ramka szklana H2-P1-(228)-2g-W-(P)",
-    2
+    1
   ],
   "KAT00860": [
     "Ramka szklana H1-P1-(157)-ktx-B",
@@ -3117,7 +3137,7 @@
   ],
   "KAT00863": [
     "Panel szklany P-(228)-ktx+ktx+ktx-W",
-    4
+    1
   ],
   "KAT00864": [
     "Panel szklany P-(299)-1g+1g+1g+ktx-B",
@@ -3361,7 +3381,7 @@
   ],
   "KAT00955": [
     "Panel szklany P-(157)-2g+1g-W",
-    8
+    2
   ],
   "KAT00957": [
     "1g+1fold GLS GP016 86*157mm WHITE",
@@ -3733,11 +3753,11 @@
   ],
   "KAT01091": [
     "Włącznik pojedynczy MTS-1g1-B",
-    3331
+    3296
   ],
   "KAT01092": [
     "Włącznik pojedynczy MTS-1g1-W",
-    3584
+    4793
   ],
   "KAT01093": [
     "Panel szklany P-(229)-1g+1g+1g+3g-W",
@@ -3901,7 +3921,7 @@
   ],
   "KAT01134": [
     "Włącznik podwójny MTS-2g1-W",
-    2248
+    3703
   ],
   "KAT01135": [
     "Panel szklany P-(228)-2g+2g+ktx-B",
@@ -3917,7 +3937,7 @@
   ],
   "KAT01138": [
     "Włącznik podwójny MTS-2g1-B",
-    2029
+    2006
   ],
   "KAT01139": [
     "Panel szkl P-(299)-ktx+ktx+2g+1g-W-(P)",
@@ -4305,7 +4325,7 @@
   ],
   "KAT01237": [
     "Panel szklany P-(299)-1g+1g+ktx+ktx-W",
-    0
+    1
   ],
   "KAT01238": [
     "Panel szklany P-(228)-ktx+ktx+2g-B-(P)",
@@ -4450,6 +4470,46 @@
   "KAT01274": [
     "Ramka szklana H2-P1-(228)-3g-W-(P)",
     2
+  ],
+  "KAT01275": [
+    "PAnel szklany H1-P2-(228)-3g+ktx-W",
+    0
+  ],
+  "KAT01276": [
+    "Panel szkl P-(299)-ktx+ktx+ktx+1g-W-(P)",
+    0
+  ],
+  "KAT01277": [
+    "Panel szklany P-(228)-kurt+kurt+2g-W-(P)",
+    0
+  ],
+  "KAT01278": [
+    "PAnel szklany P-(228)-1g+3g+1g-W-(P)",
+    0
+  ],
+  "KAT01279": [
+    "Panel szklany P-(157)-1g+kurtyna-G-(P)",
+    0
+  ],
+  "KAT01280": [
+    "Panel szklany P-(228)-1g+kurt+kurt-G-(P)",
+    0
+  ],
+  "KAT01281": [
+    "LumiPro 5 160W  1-10V  4000K",
+    23
+  ],
+  "KAT01282": [
+    "Panel szklany P-(228)-2g+2g+kurt-W-(P)",
+    0
+  ],
+  "KAT01283": [
+    "Panel szklany P-(228)-ktx+1g+ktx-B",
+    0
+  ],
+  "KAT01284": [
+    "Panel szklany P-(299)-1g+2g+ktx+ktx-W",
+    0
   ],
   "K-B000060": [
     "Adapter USB2.0-RS485",
@@ -4677,7 +4737,7 @@
   ],
   "KYA000002": [
     "Drut 0,8mm 100m",
-    76
+    60
   ],
   "KYA000003": [
     "wearing parts - cutter",
@@ -5117,7 +5177,7 @@
   ],
   "MAG000001": [
     "Pochłaniacz dymu 80W",
-    13
+    10
   ],
   "MAG000002": [
     "SE12-N5G5",
@@ -5125,7 +5185,7 @@
   ],
   "MAG000003": [
     "Filtr podstawowy do pochłaniacza 80W",
-    3
+    1
   ],
   "MAG000004": [
     "Pokrywa filtra",
@@ -5145,7 +5205,7 @@
   ],
   "MAG000008": [
     "Mechanizm dotykowy schodowy MT-1g2",
-    1108
+    3796
   ],
   "MAG000009": [
     "Mechanizm przycisku TSG-2G1",
@@ -5153,7 +5213,7 @@
   ],
   "MAG000010": [
     "Mechanizm dotykowy MT-2g2",
-    950
+    827
   ],
   "MAG000011": [
     "1/2 stereo part WHITE",
@@ -5205,11 +5265,11 @@
   ],
   "MAG000023": [
     "Ramka szklana H1-P1-157-W",
-    139
+    107
   ],
   "MAG000024": [
     "Ramka szklana H1-P1-157-B",
-    114
+    94
   ],
   "MAG000025": [
     "MP023 USB charger Black",
@@ -5265,7 +5325,7 @@
   ],
   "MAG000039": [
     "Mechanizm dotykowy dzwonka MT-DZ",
-    11
+    8
   ],
   "MAG000040": [
     "GLS panel 86*157mm WHITE",
@@ -5277,7 +5337,7 @@
   ],
   "MAG000042": [
     "Ramka szklana H2-P1-228-W",
-    377
+    371
   ],
   "MAG000043": [
     "M1-1F 86x86mm ramka pojedyncza BLACK",
@@ -5285,7 +5345,7 @@
   ],
   "MAG000044": [
     "Ramka szklana R-1-W",
-    7
+    0
   ],
   "MAG000045": [
     "1/2 blank cover part WHITE",
@@ -5293,11 +5353,11 @@
   ],
   "MAG000046": [
     "Moduł 1/2 LAN-W",
-    82
+    217
   ],
   "MAG000047": [
     "Moduł 1/2 SAT-W",
-    21
+    316
   ],
   "MAG000048": [
     "FL501-24 multi vertical base,3colour+buz",
@@ -5437,7 +5497,7 @@
   ],
   "MVA000001": [
     "Panel szklany H1-P2-228-W",
-    55
+    52
   ],
   "MVA000002": [
     "Panel szklany H1-P2-228-B",
@@ -5453,39 +5513,39 @@
   ],
   "MVA000005": [
     "Panel szklany P-86-G",
-    1734
+    1709
   ],
   "MVA000006": [
     "Panel szklany P-157-G",
-    819
+    818
   ],
   "MVA000007": [
     "Panel szklany P-228-G",
-    1465
+    1464
   ],
   "MVA000008": [
     "Ramka szklana H1-P1-157-G",
-    483
+    463
   ],
   "MVA000009": [
     "Ramka szklana R-1-G",
-    225
+    159
   ],
   "MVA000010": [
     "Ramka szklana R-2-G",
-    642
+    615
   ],
   "MVA000011": [
     "Ramka szklana R-3-G",
-    899
+    887
   ],
   "MVA000012": [
     "Ramka szklana R-4-G",
-    686
+    685
   ],
   "MVA000013": [
     "Mechanizm gniazda MG-FR-G",
-    978
+    813
   ],
   "MVA000014": [
     "Moduł 1/2 SAT-G",
@@ -5513,7 +5573,7 @@
   ],
   "MVA000020": [
     "Ramka szklana H2-P1-228-G",
-    797
+    796
   ],
   "MVA000021": [
     "Panel szklany H1-P2-228-G",
@@ -5895,6 +5955,38 @@
     "2250x650x120mm upper normal magnetic",
     0
   ],
+  "ORI000069": [
+    "1700x900x55mm bottom plate",
+    0
+  ],
+  "ORI000070": [
+    "450x450-3w die frame with K100 steel ",
+    0
+  ],
+  "ORI000071": [
+    "450x450-3w lower magnetic block with",
+    0
+  ],
+  "ORI000072": [
+    "450x450-3w connecte plate",
+    0
+  ],
+  "ORI000073": [
+    "300x600-4w die frame with K100 steel",
+    0
+  ],
+  "ORI000074": [
+    "300x600-4w magnetic block with heating ",
+    0
+  ],
+  "ORI000075": [
+    "300x600-4w connecte plate",
+    0
+  ],
+  "ORI000076": [
+    "300x600-4w floating grid",
+    0
+  ],
   "PAN000003": [
     "QM-R60 330 FULL BLACK ",
     0
@@ -5941,7 +6033,7 @@
   ],
   "PO-000006": [
     "oprawa LED 1,2M 40W IP65 6000K",
-    341
+    323
   ],
   "POZ000487": [
     "Opr. her. 236 DUST T8 EVG",
@@ -6937,11 +7029,11 @@
   ],
   "POZ003839": [
     "Filtr środkowy do pochłaniacza 80W",
-    18
+    16
   ],
   "POZ003840": [
     "Filtr węglowy 0,3um do pochłaniacza 80W",
-    7
+    5
   ],
   "POZ003841": [
     "INF3000D pre-filter wstępny",
@@ -7201,19 +7293,19 @@
   ],
   "SKŁ000019": [
     "Panel szklany P-228-W",
-    603
+    562
   ],
   "SKŁ000020": [
     "Panel szklany P-228-B",
-    754
+    738
   ],
   "SKŁ000021": [
     "Panel szklany P-157-W",
-    787
+    689
   ],
   "SKŁ000022": [
     "Panel szklany P-157-B",
-    1372
+    1283
   ],
   "SKŁ000023": [
     "Mechanizm dotykowy MT-3g1-RM",
@@ -7233,7 +7325,7 @@
   ],
   "SKŁ000027": [
     "Panel szklany P-(157)-1g+2g-B",
-    4
+    11
   ],
   "SKŁ000028": [
     "Mechanizm gniazda MG-W",
@@ -7245,7 +7337,7 @@
   ],
   "SKŁ000030": [
     "Moduł 1/2 USB 1,5A-W",
-    138
+    129
   ],
   "SKŁ000031": [
     "Mechanizm dotykowy kurtyny MT-K-RM",
@@ -7257,7 +7349,7 @@
   ],
   "SKŁ000033": [
     "Ramka szklana R-2-W",
-    2254
+    2205
   ],
   "SKŁ000034": [
     "Panel szklany P-(228)-1g+kurt+kurt-W",
@@ -7265,11 +7357,11 @@
   ],
   "SKŁ000035": [
     "Panel szklany P-299-W",
-    125
+    510
   ],
   "SKŁ000036": [
     "BOX-A1-WIFI",
-    327
+    321
   ],
   "SKŁ000037": [
     "BOX-A1-WIFI+RM",
@@ -7277,7 +7369,7 @@
   ],
   "SKŁ000038": [
     "Mechanizn dotykowy MT-1g1-WIFI+RM",
-    62
+    58
   ],
   "SKŁ000039": [
     "Mechanizm dotykowy MT-2g1-WIFI+RM",
@@ -7301,15 +7393,15 @@
   ],
   "SKŁ000044": [
     "Mechanizm gniazda MG-GR-B",
-    152
+    107
   ],
   "SKŁ000045": [
     "Mechanizm gniazda MG-GR-W",
-    304
+    260
   ],
   "SKŁ000046": [
     "Mechanizm gniazda MG-GRK-W",
-    0
+    200
   ],
   "SKŁ000047": [
     "Mechanizm gniazda MG-GRK-B",
@@ -7325,11 +7417,11 @@
   ],
   "SKŁ000050": [
     "Panel szklany P-(157)-2g+2g-W-(P)",
-    1
+    4
   ],
   "SKŁ000051": [
     "Ramka szklana H1-P1-(157)-2g-W-(P)",
-    9
+    8
   ],
   "SKŁ000052": [
     "Ramka szklana H1-P1-(157)-kurtyna-W",
@@ -7377,31 +7469,31 @@
   ],
   "SKŁ000063": [
     "Mechanizm dotykowy kurtyny MT-K-RM-BB",
-    331
+    310
   ],
   "SKŁ000064": [
     "Mechanizm dotykowy kurtyny MT-K-WiFi-BB",
-    2084
+    2070
   ],
   "SKŁ000065": [
     "Mechanizm dotykowy MT-1g1-WiFi-BB",
-    2632
+    2524
   ],
   "SKŁ000066": [
     "Mechanizm dotykowy MT-2g1-WiFi-BB",
-    2393
+    2245
   ],
   "SKŁ000067": [
     "Mechanizn dotykowy MT-3g1-WiFi-BB",
-    477
+    460
   ],
   "SKŁ000068": [
     "Mechanizm gniazda MG-2FR-B",
-    11
+    70
   ],
   "SKŁ000069": [
     "Mechanizm gniazda MG-2FR-W",
-    33
+    244
   ],
   "SKŁ000070": [
     "Panel szklany P-(86)-kurtyna-3P-W",
@@ -7413,15 +7505,15 @@
   ],
   "SKŁ000072": [
     "Panel szklany P-(157)-ktx+ktx-W",
-    6
+    2
   ],
   "SKŁ000073": [
     "Panel szklany P-(86)-ktx-W",
-    37
+    6
   ],
   "SKŁ000074": [
     "Panel szklany P-(86)-ktx-B",
-    20
+    13
   ],
   "SKŁ000075": [
     "Panel szklany P-(157)-2g+ktx-W",
@@ -7477,27 +7569,27 @@
   ],
   "SKŁ000088": [
     "Mechanizm dotykowy MTS-1g1",
-    74
+    40
   ],
   "SKŁ000089": [
     "Mechanizm dotykowy MTS-2g1",
-    1038
+    876
   ],
   "SKŁ000090": [
     "Mechanizm dotykowy MTS-3g1",
-    659
+    653
   ],
   "SKŁ000091": [
     "Mechanizm dotykowy MTS-1g1-RM",
-    270
+    249
   ],
   "SKŁ000092": [
     "Mechanizm dotykowy MTS-2g1-RM",
-    1051
+    1033
   ],
   "SKŁ000093": [
     "Mechanizm dotykowy MTS-3g1-RM",
-    376
+    374
   ],
   "SKŁ000094": [
     "BOX-WiFi",
@@ -7593,7 +7685,7 @@
   ],
   "SKŁ000117": [
     "Mechanizm dotykowy MT-1g2w-WiFi+RM",
-    600
+    593
   ],
   "SKŁ000118": [
     "Mechanizm dotykowy MT-2g2w-WiFi+RM",
@@ -7845,7 +7937,7 @@
   ],
   "TOU000033": [
     "Panel szklany P-(86)-2g-B",
-    285
+    225
   ],
   "TOU000034": [
     "Szkło dotyk 1G WHITE + srebrna ramka",
@@ -7853,7 +7945,7 @@
   ],
   "TOU000035": [
     "Panel szklany P-(86)-1g-B",
-    379
+    278
   ],
   "TOU000036": [
     "M1-201B 2gang 1way touch switch black",
@@ -7869,7 +7961,7 @@
   ],
   "TOU000039": [
     "Panel szklany P-(86)-3g-B",
-    9
+    3
   ],
   "TOU000040": [
     "Szkło dotyk 1gang Czarny ",
@@ -7893,11 +7985,11 @@
   ],
   "TOU000045": [
     "Ramka szklana H1-P1-(157)-1g-B",
-    24
+    19
   ],
   "TOU000046": [
     "Ramka szklana H1-P1-(157)-1g-W",
-    10
+    3
   ],
   "TOU000047": [
     "2 frame Alum M2-2F 86*157mm BLACK",
@@ -7909,7 +8001,7 @@
   ],
   "TOU000050": [
     "Panel szklany P-(157)-2g+1g-B",
-    9
+    2
   ],
   "TOU000051": [
     "2g+1g GLS panel GP014 white 86*157mm ",
@@ -7917,7 +8009,7 @@
   ],
   "TOU000052": [
     "Panel szklany P-(157)-2g+2g-B",
-    11
+    18
   ],
   "TOU000053": [
     "Panel szklany 86*157mm 2g+2g WHITE",
@@ -8033,7 +8125,7 @@
   ],
   "TOU000083": [
     "Pilot 4-przyciskowy 4g-RM",
-    1655
+    1633
   ],
   "TOU000084": [
     "Włącznik pojedynczy TSG-1g1-W",
@@ -8097,11 +8189,11 @@
   ],
   "TOU000099": [
     "Panel szklany P-(86)-2g-W",
-    13
+    27
   ],
   "TOU000100": [
     "Panel szklany P-(86)-1g-W",
-    147
+    245
   ],
   "TOU000101": [
     "Panel szklany 86x157mm 1g+2g BLACK",
@@ -8157,7 +8249,7 @@
   ],
   "TOU000119": [
     "Panel szklany P-(157)-2g+2g-W",
-    5
+    13
   ],
   "TOU000120": [
     "Mechanizm przycisku TSG-2G2",
@@ -8169,23 +8261,23 @@
   ],
   "TOU000122": [
     "BOX-A1-RM",
-    173
+    112
   ],
   "TOU000123": [
     "Panel szklany bezprzewodowy RT-1g1-B",
-    268
+    260
   ],
   "TOU000124": [
     "Panel szklany bezprzewodowy RT-2g1-B",
-    115
+    110
   ],
   "TOU000125": [
     "Panel szklany bezprzewodowy RT-3g1-B",
-    157
+    156
   ],
   "TOU000126": [
     "Panel szklany bezprzewodowy RT-1g1-W",
-    210
+    188
   ],
   "TOU000127": [
     "M1-2F Black Ramka podwójna na gniazdka ",
@@ -8217,11 +8309,11 @@
   ],
   "TOU000134": [
     "Ramka szklana H1-P1-(157)-2g-B",
-    8
+    0
   ],
   "TOU000135": [
     "Ramka szklana H1-P1-(157)-2g-W",
-    11
+    8
   ],
   "TOU000136": [
     "1/2 Satellite part WHITE",
@@ -8241,7 +8333,7 @@
   ],
   "TOU000140": [
     "Panel szklany P-(157)-1g+1g-W",
-    21
+    0
   ],
   "TOU000141": [
     "Panel szklany 1g+1g Biały 86x157mm ",
@@ -8317,7 +8409,7 @@
   ],
   "TOU000159": [
     "Mechanizm dotykowy MT-1g1-RM",
-    218
+    216
   ],
   "TOU000160": [
     "Mechanizm dotykowy MT-2g1-RM",
@@ -8333,11 +8425,11 @@
   ],
   "TOU000163": [
     "Panel szklany P-86-W",
-    3218
+    5073
   ],
   "TOU000164": [
     "Panel szklany P-86-B",
-    323
+    803
   ],
   "TOU000165": [
     "MT-101 1G1W part ",
@@ -8361,7 +8453,7 @@
   ],
   "TOU000170": [
     "Panel szklany P-(86)-3g-W",
-    7
+    3
   ],
   "TOU000171": [
     "TSG-RC-2G1-W Remote CURTAIN +pilot ",
@@ -8453,15 +8545,15 @@
   ],
   "TOU000193": [
     "Moduł 1/2 zaślepka-W",
-    656
+    645
   ],
   "TOU000194": [
     "Moduł 1/2 LAN-B",
-    16
+    154
   ],
   "TOU000195": [
     "Moduł 1/2 SAT-B",
-    158
+    254
   ],
   "TOU000196": [
     "Moduł 1/2 zaślepka-B",
@@ -8485,7 +8577,7 @@
   ],
   "TOU000201": [
     "Panel szklany P-(157)-1g+1g-B",
-    25
+    15
   ],
   "TOU000202": [
     "Panel szklany 1g2+2g Biały 86x157mm",
@@ -8533,19 +8625,19 @@
   ],
   "TOU000213": [
     "Panel szklany P-(228)-2g+2g+2g-W",
-    2
+    6
   ],
   "TOU000214": [
     "Panel szklany P-(228)-2g+2g+2g-B",
-    5
+    2
   ],
   "TOU000215": [
     "Panel szklany P-(228)-1g+1g+1g-W",
-    12
+    10
   ],
   "TOU000216": [
     "Panel szklany P-(228)-1g+1g+1g-B",
-    12
+    0
   ],
   "TOU000217": [
     "Panel szklany 2g2+2g1 Czarny  86*157mm ",
@@ -8577,7 +8669,7 @@
   ],
   "TOU000224": [
     "Panel szklany P-(86)-kurtyna-B",
-    2
+    0
   ],
   "TOU000225": [
     "Panel szklany P-(228)-2g+2g+1g-B",
@@ -8617,7 +8709,7 @@
   ],
   "TOU000234": [
     "Panel szklany P-(86)-kurtyna-W",
-    5
+    0
   ],
   "TOU000235": [
     "TSG-R-1G1-BLACK Remote",

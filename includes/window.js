@@ -8,7 +8,16 @@ class Window {
 
     start() {
         app.once('ready', function () {
-            mainWindow = new BrowserWindow({ width: 800, height: 900, maximizable: false, resizable: true });
+            mainWindow = new BrowserWindow({ 
+                width: 800, 
+                height: 900, 
+                maximizable: false, 
+                resizable: true,
+                webPreferences: {
+                    nodeIntegration: false,
+                    preload: __dirname + '\\html\\script.js'
+                } });
+
             mainWindow.loadURL('file://' + __dirname + config.WINDOW_TEMPLATE);
 
             mainWindow.on('closed', function () {
