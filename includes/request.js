@@ -29,7 +29,7 @@ class Request {
     }
 
     allegro( cb ) {
-        let base64 = new Buffer( '33a414bdf51b4b6989bcf59516458724:PMDHNNCyW7XyRn7m5HGxyuCuNJOGvc7JucpdfVOTSNAjuunlqjHMnkROKxXE3wbG' ).toString('base64');
+        let base64 = new Buffer( config.allegro.client_id + ':' + config.allegro.client_secret ).toString('base64');
 
         request.post( {
             url: 'https://allegro.pl/auth/oauth/device', 
@@ -37,7 +37,7 @@ class Request {
                 'Authorization': 'Basic '+base64,
                 'Content-Type': 'application/x-www-form-urlencoded'
             },
-            body: 'client_id=33a414bdf51b4b6989bcf59516458724'
+            body: 'client_id=' + config.allegro.client_id
         }, function( err, res, body ) {
             if (err) {
                 console.log( err );

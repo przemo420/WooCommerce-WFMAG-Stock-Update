@@ -1,19 +1,25 @@
 var express = require('express'), 
     app = express(),
     router = express.Router(),
+    rateLimit = require("express-rate-limit"),
     _currentDir = __dirname + '/public/',
     config = event = request = null;
 
-app.use( '/', router )
-app.use( '/css', express.static( _currentDir + 'css') );
-app.use( '/js', express.static( _currentDir + 'js') );
-app.use( '/img', express.static( _currentDir + 'img') );
+const apiLimiter = rateLimit({
+    windowMs: 15 * 60 * 1000, // 15 minutes
+    max: 100
+});
 
-router.all('/', function (req, res, next) {
+app.use( '/', apiLimiter, router );
+app.use( '/css', apiLimiter, express.static( _currentDir + 'css') );
+app.use( '/js', apiLimiter, express.static( _currentDir + 'js') );
+app.use( '/img', apiLimiter, express.static( _currentDir + 'img') );
+
+router.all('/', apiLimiter, function (req, res, next) {
     res.sendFile( _currentDir + 'index.html' );
 });
 
-router.all('/get-order-list', function (req, res, next) {
+router.all('/get-order-list', apiLimiter, function (req, res, next) {
     var keys = { client: config.orderList.client, secret: config.orderList.secret };
 
     request.getOrdersFromShop( config.orderList.host, keys, function( err, body ){

@@ -2,7 +2,7 @@
   "name": "WFMAGWooCommerce",
   "main": "klient.js",
   "description": "Aplikacja pobiera stany magazynowe z bazy danych WAPRO MAG i przesyła informacje do stron internetowych opartych na WordPress WooCommerce w celu aktualizacji danych.",
-  "version": "0.0.1-alpha",
+  "version": "0.0.1b-alpha",
   "homepage": "https://github.com/GeDox/WP-WooCommerce-Aktualizator-stan-w-magazynowych-WF-MAG",
   "author": "Przemysław Kozłowski",
   "scripts": {
@@ -40,10 +40,11 @@
   ],
   "dependencies": {
     "async": "^3.2.0",
-    "electron": "^11.0.2",
+    "electron": "^11.0.3",
     "electron-packager": "^15.1.0",
     "events": "^3.2.0",
     "express": "^4.17.1",
+    "express-rate-limit": "^5.2.3",
     "http": "0.0.1-security",
     "mssql": "^6.2.3",
     "regedit": "^3.0.3",
