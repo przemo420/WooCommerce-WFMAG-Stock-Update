@@ -1,10 +1,9 @@
-.github/
-.vscode/
+.*/
 node_modules/
 deprecated/
+old/
 
-config.js
-config2.js
+config*.js
 *.sln
 *.bat
 *.txt
