@@ -1,5 +1,7 @@
-.vs/
+.github/
+.vscode/
 node_modules/
+deprecated/
 
 config.js
 config2.js
