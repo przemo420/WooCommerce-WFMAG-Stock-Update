@@ -50,11 +50,10 @@ class US {
                     if (err) return callback(err, true);
 
                     if( config.debug ) {
-                        console.log( 'console.log', body );
                         config.logs( 'config.logs', body );
                     }
 
-                    if (typeof body.ok === 'undefined' || body.ok == 'done') {
+                    if (typeof body.ok === 'undefined' || body.ok != 'done') {
                         return callback( 'Wystąpił błąd z aktualizacją: '+ JSON.stringify(body, null, 2) );
                     }
 

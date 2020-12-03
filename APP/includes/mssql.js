@@ -53,7 +53,11 @@ class SQLRequest {
             },
             function( cachedProducts, callback ) {
                 async.forEachOf(products, function (pValue, pKey, pCallback) {
-                    var multiSKU = pValue.sku.split(/:|\&|\+/g); var SKUType = SKU_TYPE_DEFAULT; var tempCount = 0;
+                    var multiSKU = ''; var SKUType = SKU_TYPE_DEFAULT; var tempCount = 0;
+
+                    if( typeof pValue.sku !== 'undefined') {
+                        multiSKU = pValue.sku.split(/:|\&|\+/g);
+                    }
         
                     if( pValue.sku.indexOf('&') >= 0 )      SKUType = SKU_TYPE_MIN;
                     else if( pValue.sku.indexOf('+') >= 0 ) SKUType = SKU_TYPE_ADD;

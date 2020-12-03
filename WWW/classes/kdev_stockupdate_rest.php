@@ -20,11 +20,13 @@ class KDEV_StockUpdate_Rest {
 		register_rest_route( 'stany/v1', 'aktualizuj', array(
 			'methods' => 'POST',
 			'callback' => array($this, 'synchronizeStockProducts'),
+			'permission_callback' => '__return_true'
 		));
 			
 		register_rest_route( 'stany/v1', 'produkty', array(
 			'methods' => 'POST',
 			'callback' => array($this, 'listStockProducts'),
+			'permission_callback' => '__return_true'
 		));
 	}
 	
