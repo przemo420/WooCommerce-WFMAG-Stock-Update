@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Aktualizator stanów magazynowych</title>
+
+    <style>
+        nav .add { color: white }
+        #main .logs { position: absolute; bottom: 20px; width: 700px; height: 150px }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
+        <a class="navbar-brand" href="#">Aktualizator stanów magazynowych</a>
+
+        <div class="collapse navbar-collapse" id="navbarText"></div>
+            <button type="button" class="btn btn-warning add" data-toggle="modal" data-target="#addSite">Dodaj stronę</button>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <div class="container">
+        <div class="row" id="main">
+            <div class="col-md-12 mt-4 text-center"><img src="https://indual.pl/wp-content/themes/indual/img/Indual_Automatyka_Przemyslowa-Logo.png" /></div>
+            <div class="mt-2">&nbsp;</div>
+
+            <div class="col-md-12">
+                <div class="row" id="content">
+                    <!-- sites -->
+                </div>
+            </div>
+            <div class="col-md-12 logs">
+                <div class="row">
+                    <textarea style="width: 100%; height: 150px" id="logs"></textarea>
+                </div>
+            </div>
+       </div>
+    </div>
+
+    <div class="modal fade" id="addSite" tabindex="-1" role="dialog" aria-labelledby="addSiteLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addSiteLabel">Szablon dodawania nowej strony</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group row">
+                        <label for="siteID" class="col-sm-3 col-form-label">Adres strony</label>
+                        <div class="input-group col-sm-9">
+                            <div class="input-group-prepend">
+                                <select class="input-group-text" id="sitePROT"> <option>https://</option> <option>http://</option> </select>
+                            </div>
+                            
+                            <input type="text" class="form-control" id="siteID" placeholder="indual.pl">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="siteMAG" class="col-sm-3 col-form-label">ID magazynu</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="siteMAG" placeholder="Czujniki 150, Lighting 218">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+                  <button type="button" class="btn btn-primary add">Dodaj stronę</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>if (typeof module === 'object') { window.module = module; module = undefined; }</script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
