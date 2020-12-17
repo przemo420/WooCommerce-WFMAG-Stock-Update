@@ -52,7 +52,7 @@ class SQLRequest {
                     var multiSKU = ''; var SKUType = SKU_TYPE_DEFAULT; var tempCount = 0;
 
                     if( typeof pValue.sku !== 'string' ) {
-						console.log( pValue, 'jest niepoprawnym ciągiem!' );
+						console.log( pValue, 'jest niepoprawnym ciągiem!', pKey );
 						return pCallback(null);
 					}
 						

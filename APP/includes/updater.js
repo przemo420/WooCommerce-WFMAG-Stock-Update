@@ -19,7 +19,7 @@ class US {
                         return callback( 'Wystąpił błąd z pobraniem artykułów ze sklepu: '+ JSON.stringify(body, null, 2) );
                     }
 
-                    shopArticles = body;
+                    shopArticles = body.products;
                     window.info( 'Pobrano artykuły ze sklepu, trwa łączenie z MAGiem...' );
                     return callback(null);
                 });

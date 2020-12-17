@@ -61,6 +61,7 @@ class KDEV_StockUpdate_Rest {
 		if( $_POST['api'] != $this->settingsInstance->getApiKey() ) return array( 'ok' => 'failApi' );
 		
 		global $wpdb;
-		return $wpdb->get_results( "SELECT `post_id` `id`, `meta_value` `sku` FROM $wpdb->postmeta WHERE `meta_key` = '_sku' AND `meta_value` <> ''" );
+		$products = $wpdb->get_results( "SELECT `post_id` `id`, `meta_value` `sku` FROM $wpdb->postmeta WHERE `meta_key` = '_sku' AND `meta_value` <> ''" );
+		return array( 'ok' => 'done', 'products' => $products );
 	}
 }
