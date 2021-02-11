@@ -8,11 +8,11 @@ class Registry {
     constructor() {}
 
     getSites(cb) {
-        return cb( config.sites );
+        return cb( config.getValue( 'sites' ) );
     }
 
     updateSites(cb) {
-        fs.open('config.js', 'w', (err, fd) => {
+        /*fs.open('config.js', 'w', (err, fd) => {
             if (err) return cb(err);
 
             var text = 'module.exports =';
@@ -29,30 +29,30 @@ class Registry {
                     cb(null);
                 });
             });
-        });
+        });*/
     }
 
     addSite( id, prot, mag, cb ) {
-        config.sites[ id ] = { 'url': prot+id, 'lastUpdate': '-', 'idMagazynu': mag };
+        if( config.isSiteExist( site ) ) return cb( 'Strona o podanym identyfikatorze [', site, '] już istnieje.' );
 
-        this.updateSites(function(err){
+        config.insertSite( id, prot, mag, function(err){
             return cb( err );
         });
     }
 
     removeSite( site, cb ) {
-        if( typeof config.sites[ site ] === 'undefined') return cb( 'Nie istnieje strona o tym identyfikatorze: '+site );
+        if( !config.isSiteExist( site ) ) return cb( 'Nie istnieje strona o tym identyfikatorze:', site );
 
-        delete config.sites[ site ];
-        this.updateSites(function(err){
+        config.removeSite( site, function(err){
             return cb( err );
         });
     }
 
     setUpdateTime( site, cb ) {
-        if( typeof config.sites[ site ] === 'undefined') return;
+        if( !config.isSiteExist( site ) ) return cb( 'Nie istnieje strona o tym identyfikatorze:', site );
 
-        config.sites[ site ].lastUpdate = (new Date()).toLocaleString();
+        config.getValue( 'sites' )[ site ].lastUpdate = (new Date()).toLocaleString();
+
         this.updateSites(function(err){
             return cb( err );
         });

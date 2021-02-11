@@ -3,13 +3,13 @@ var config = event = null;
 
 class Request {
     send(url, art, cb) {
-        request.post(url + 'aktualizuj', { json: true, form: { api: config.siteKey, products: art } },
+        request.post(url + 'aktualizuj', { json: true, form: { api: config.getValue( 'siteKey' ), products: art } },
             function (err, res, body) {
                 if (err) {
                     return cb(err);
                 }
 
-                if( config.debug ) {
+                if( config.getValue( 'debug' ) ) {
                     console.log('Request->send(', url, ',', art, ') =>', body);
                 }
 
@@ -18,7 +18,7 @@ class Request {
     }
 
     list(url, cb) {
-        request.post(url + 'produkty', { json: true, form: { api: config.siteKey } },
+        request.post(url + 'produkty', { json: true, form: { api: config.getValue( 'siteKey' ) } },
             function (err, res, body) {
                 if (err) {
                     return cb(err);
@@ -26,26 +26,6 @@ class Request {
                 
                 return cb(null, body);
             });
-    }
-
-    allegro( cb ) {
-        let base64 = new Buffer( config.allegro.client_id + ':' + config.allegro.client_secret ).toString('base64');
-
-        request.post( {
-            url: 'https://allegro.pl/auth/oauth/device', 
-            headers: {
-                'Authorization': 'Basic '+base64,
-                'Content-Type': 'application/x-www-form-urlencoded'
-            },
-            body: 'client_id=' + config.allegro.client_id
-        }, function( err, res, body ) {
-            if (err) {
-                console.log( err );
-                return cb(err);
-            }
-
-            return cb( null, body );
-        });
     }
 
     getOrdersFromShop( site, keys, cb ) {

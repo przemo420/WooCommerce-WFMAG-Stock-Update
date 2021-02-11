@@ -13,7 +13,27 @@ var config = {}, event = null;
 
 class SQLRequest {
     makeConnection(cb) {
-        mssql.connect(config.mssql, function (err) {
+        let mssqlConfig = {
+            "user": config.getValue( 'mssql.user' ),
+            "password": config.getValue( 'mssql.password' ),
+            "server": config.getValue( 'mssql.server' ),
+            "database": config.getValue( 'mssql.database' ),
+            "pool": {
+                "max": Number( config.getValue( 'mssql.pool.max' ) ),
+                "min": Number( config.getValue( 'mssql.pool.min' ) ),
+                "idleTimeoutMillis": Number( config.getValue( 'mssql.pool.idleTimeoutMillis' ) )
+            },
+            "options": {
+                "encrypt": Boolean( Number( config.getValue( 'mssql.options.encrypt' ) ) )
+            },
+            "port": Number( config.getValue( 'mssql.port' ) ),
+            "stream": Boolean( Number( config.getValue( 'mssql.stream' ) ) ),
+            "parseJSON": Boolean( Number( config.getValue( 'mssql.parseJSON' ) ) )
+        };
+
+        console.log( mssqlConfig );
+
+        mssql.connect( mssqlConfig, function (err) {
             return cb(err);
         });
 

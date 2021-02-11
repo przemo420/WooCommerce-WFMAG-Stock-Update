@@ -1,13 +1,18 @@
 ﻿const { ipcMain, app, BrowserWindow } = require('electron');
-const config = require('../config');
 
-let mainWindow = allegroWindow = event = null;
+let mainWindow = allegroWindow = event = config = null;
 
 class Window {
     constructor() {}
 
-    start() {
-        app.once('ready', function () {
+    init() {
+        console.log( 'Window.init', app.isReady() );
+
+        if( app.isReady() ) {
+            if( mainWindow !== null ) {
+                app.quit();
+            }
+
             mainWindow = new BrowserWindow({ 
                 width: 800, 
                 height: 900, 
@@ -18,26 +23,29 @@ class Window {
                     preload: __dirname + '\\html\\script.js'
                 } });
 
-            mainWindow.loadURL('file://' + __dirname + config.WINDOW_TEMPLATE);
+            mainWindow.loadURL('file://' + __dirname + config.getValue( 'WINDOW_TEMPLATE' ) );
 
             mainWindow.on('closed', function () {
                 mainWindow = null;
             });
 
             event.emit('window-start');
-        });
+        }
     }
 
-    allegro( url ) {
+    allegro( url, cb ) {
         allegroWindow = new BrowserWindow({ width: 800, height: 900, maximizable: false, resizable: true });
         allegroWindow.loadURL( url );
 
         allegroWindow.on('closed', function () {
-            mainWindow = null;
+            allegroWindow = null;
+
+            return cb(1);
         });
     }
 
     send(data, content) {
+        if( mainWindow === null ) return;
         mainWindow.webContents.send(data, content);
     }
 
@@ -69,6 +77,7 @@ app.once('window-all-closed', function () {
 });
 
 module.exports = function (cfg, e) {
+    config = cfg;
     event = e;
 
     return new Window();

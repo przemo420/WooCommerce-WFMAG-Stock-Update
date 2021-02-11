@@ -12,7 +12,7 @@ class US {
 
         async.waterfall([
             function( callback ) {
-                request.list( option.url + config.REQUEST_URL, function (err, body) {
+                request.list( option.url + config.getValue( 'REQUEST_URL' ), function (err, body) {
                     if (err) return callback( 'Wystapił błąd z wysłaniem danych do serwera:' + err );
 
                     if (typeof body.ok === 'undefined' || body.ok != 'done') {
@@ -50,10 +50,10 @@ class US {
             function( art, callback ) {
                 window.info('Wysyłanie danych do ' + option.url + '.');
                         
-                request.send( option.url + config.REQUEST_URL, art, function (err, body) {
+                request.send( option.url + config.getValue( 'REQUEST_URL' ), art, function (err, body) {
                     if (err) return callback(err, true);
 
-                    if( config.debug ) {
+                    if( config.getValue( 'debug' ) ) {
                         config.logs( 'config.logs', body );
                     }
 
