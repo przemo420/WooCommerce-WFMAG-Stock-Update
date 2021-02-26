@@ -1,0 +1,24 @@
+extends layout
+
+block layout-content
+    table.table
+        thead
+            tr
+                th(scope="col") #
+                th(scope="col") Nazwa artykułu
+                th(scope="col") Cena
+                th(scope="col") Stan magazynowy
+                th(scope="col") Szczegóły
+        tbody#offerData
+            -for (var i = 0; i < offers.length ; i++) {
+                -data = offers[ i ];
+                tr
+                    th(scope="row") #{data.id}
+                    td #{data.name}
+                    td #{data.sellingMode.price.amount} #{data.sellingMode.price.currency}
+                    td #{data.stock.available} szt.
+                    td
+                        a.btn.btn-info(href=data.id) Szczegóły
+            -}
+                        
+    script(src="/js/offers.js")

@@ -4,12 +4,14 @@ const SKU_TYPE_ADD = 2;
 
 const async = require('async'),
     fs = require('fs'),
-    mssql = require('mssql');
+    mssql = require('mssql'),
+    event = require('./events.js');
 
 const parseArticleFile = function( mag ) {
     return './artykuly-'+ mag +'.txt';
 };
-var config = {}, event = null;
+
+var config = {};
 
 class SQLRequest {
     makeConnection(cb) {
@@ -179,8 +181,12 @@ class SQLRequest {
     }
 }
 
-module.exports = function (cfg, e) {
+event.on( 'mssql:offer:get', function(e) {
+    console.log( 'mssql:offer:get', e );
+});
+
+module.exports = function (cfg) {
     config = cfg;
-    event = e;
+
     return new SQLRequest();
 }

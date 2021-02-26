@@ -1,6 +1,7 @@
-const request = require('request');
-const fs = require('fs');
-var config = event = window = $this = null;
+const request = require('request'),
+    fs = require('fs');
+
+var config = window = $this = null;
 
 class Allegro {
     getVerificationUri( cb ) {
@@ -65,6 +66,35 @@ class Allegro {
         });
     }
 
+    allegroGetOffers( data={ token: '', offset: 0 }, cb ) {
+        let orderRequest = '?limit=1000&publication.status=ACTIVE';
+
+        if( data.offset ) {
+            orderRequest += '&offset=' + data.offset;
+        }
+
+       // if( typeof orderid !== 'undefined' ) {
+        //    orderRequest = '&from=e9a407c2-55a8-11eb-a4fd-a94a35d37f1e';
+        //}
+
+        request.get( {
+            url: 'https://api.allegro.pl/sale/offers' + orderRequest,
+            headers: {
+                'Authorization': 'Bearer ' + data.token,
+                'Content-Type': 'application/vnd.allegro.public.v1+json'
+            }
+        }, function( err, res, body ) {
+            if ( err )  {
+                console.log( err );
+                return cb(err);
+            }
+
+            body = JSON.parse(body).offers;
+            fs.writeFileSync( "offers.txt", JSON.stringify(body,null,2) );
+            return cb( null, body );
+        });
+    }
+
     allegroGetOrders( token, cb ) {
         let orderRequest = '';
 
@@ -117,9 +147,8 @@ function getCurrentTimestamp() {
     return Math.floor( new Date().getTime() / 1000 );
 }
 
-module.exports = function (cfg, e, w) {
+module.exports = function ( cfg, e, w) {
     config = cfg;
-    event = e;
     window = w;
 
     $this = new Allegro();

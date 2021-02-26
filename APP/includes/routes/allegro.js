@@ -1,8 +1,10 @@
-var express = require('express');
-var router = express.Router();
-var path = require('path');
+const express = require('express'),
+    router = express.Router(),
+    path = require('path'),
+    fs = require('fs'),
+    _currentDir = path.resolve( __dirname + '/../public/routes' );
 
-const _currentDir = path.resolve( __dirname + '/../public/routes' );
+let event = null;
 
 router.use(function timeLog (req, res, next) {
     console.log('Time: ', Date.now());
@@ -10,10 +12,21 @@ router.use(function timeLog (req, res, next) {
 })
 
 router.get('/', function (req, res) {
-    res.sendFile( _currentDir + '/header.html' );
-    res.sendFile( _currentDir + '/allegro-index.html' );
-    res.sendFile( _currentDir + '/footer.html' );
+    //res.sendFile( _currentDir + '/index.html' );
+    res.render( "index", { title: "Allegro Home" } );
 })
+
+router.use('/offers', require('./allegroOffers.js'));
+
+router.get('/orders', function (req, res) { 
+    getTemplateFile( 'allegro-orders.html', function( err, tmpl ){
+        if( err ) {
+            return res.status(200).send({ success: false, template: tmpl });
+        }
+
+        res.status(200).send({ success: true, template: tmpl });
+    });
+});
 
 router.get('/init', function (req, res) { 
     let accessToken = config.getValue( 'allegro.access_token' );
@@ -34,9 +47,18 @@ router.get('/init', function (req, res) {
         console.log( 'Wykryto PRZETERMINOWANY token dostępu.' );
         
         allegro.refreshAccessToken(function(){
+            res.status(200).send({ success: true, template: '' });
         });
     } else {
         console.log( 'Wykryto PRAWIDŁOWY token dostępu.' );
+
+        getTemplateFile( 'allegro-index.html', function( err, tmpl ){
+            if( err ) {
+                return res.status(200).send({ success: false, template: tmpl });
+            }
+
+            res.status(200).send({ success: true, template: tmpl });
+        });
     }
 });
 
@@ -78,5 +100,20 @@ router.post('/auth', function (req, res ) {
         res.status(200).send( data );
     });
 });
+
+function getTemplateFile( filename, cb ) {
+    try {
+        const data = fs.readFileSync( _currentDir + '\\templates\\' + filename , 'utf8' );
+
+        return cb( null, data );
+    } catch (err) {
+        console.error( err );
+        return cb( err );
+    }
+}
+
+function getCurrentTimestamp() {
+    return Math.floor( new Date().getTime() / 1000 );
+}
 
 module.exports = router;

@@ -4,18 +4,19 @@ var express = require('express'),
     rateLimit = require("express-rate-limit"),
     bodyParser = require('body-parser'),
     fs = require('fs'),
+    path = require('path'),
     _currentDir = __dirname + '/public/',
     config = event = request = allegro = null;
 
 var routeAllegro = require( __dirname + '\\routes\\allegro.js' );
 
 const apiLimiter = rateLimit({
-    windowMs: 15 * 60 * 1000, // 15 minutes
-    max: 100
+    windowMs: 1 * 60 * 1000, // 1 minutes
+    max: 10000
 });
 
-app.engine( 'html', require('ejs').renderFile );
-app.set( 'view engine', 'html' );
+app.set( "views", path.join(__dirname, "views") );
+app.set( "view engine", "pug" );
 
 app.use( bodyParser.json() ); // support json encoded bodies
 app.use( bodyParser.urlencoded({ extended: true }) ); // support encoded bodies

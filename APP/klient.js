@@ -1,11 +1,13 @@
-const events = require('events'), event = new events.EventEmitter();
+//const app = express(), events = require('events'), event = new events.EventEmitter();
+//app.set( 'eventEmitter', event );
 
 const config = require('./config.js');
+const event = require('./includes/events.js');
 const registry = require('./includes/registry.js')(config, event);
-const mssql = require('./includes/mssql.js')(config, event);
+const mssql = require('./includes/mssql.js')(config);
 const window = require('./includes/window.js')(config, event);
 const request = require('./includes/request.js')(config, event);
-const allegro = require('./includes/allegro.js')(config, event, window);
+const allegro = require('./includes/allegro.js')(config, event, null);
 const ws = require('./includes/ws.js')(config, event, request, allegro);
 
 const updater = require('./includes/updater.js')(config, event, window, registry, request, mssql);
