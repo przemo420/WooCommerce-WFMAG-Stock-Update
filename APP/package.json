@@ -51,7 +51,7 @@
     "express-rate-limit": "^5.2.3",
     "http": "0.0.1-security",
     "mssql": "^6.3.1",
-    "pug": "^3.0.0",
+    "pug": "^3.0.1",
     "regedit": "^3.0.3",
     "request": "^2.88.2",
     "sqlite3": "^5.0.1"
