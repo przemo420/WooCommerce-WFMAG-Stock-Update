@@ -54,7 +54,7 @@
     "pug": "^3.0.0",
     "regedit": "^3.0.3",
     "request": "^2.88.2",
-    "sqlite3": "^5.0.1"
+    "sqlite3": "^5.0.3"
   },
   "contributors": [],
   "engines": {},
