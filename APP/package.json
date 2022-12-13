@@ -47,7 +47,7 @@
     "electron-prebuilt": "^1.4.13",
     "electron-rebuild": "^2.3.4",
     "events": "^3.2.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-rate-limit": "^5.2.3",
     "http": "0.0.1-security",
     "mssql": "^6.3.1",
